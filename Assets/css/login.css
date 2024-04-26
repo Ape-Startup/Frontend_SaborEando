@@ -1,0 +1,89 @@
+/* estilização geral */
+:root {
+    /* fonts */
+        --cor--primaria: #A60402;
+        --cor--secundaria: #DFC4A2;
+        --cor--input:#F0E4D4;
+        --cor--placeholder:#A9A197;
+        --cor--bg:#F7F1E8;
+        --cor--hover--botao: #970402;
+        --cor--press--botao: #760301;
+        --cor--confirmacao: #008124;
+         --cor--erro: #8c2e0e;
+        --cor--info: #0077a9;
+        --cor--aviso: ##e8d000;
+        --cor-preto:black;
+         --cor--branco:white;
+        
+
+      /* 
+       font-family: "Urbanist", sans-serif;
+       font-family: "Playfair Display", serif;
+      
+      */
+
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+  body{
+    background-image: url(../../Assets/img/bg-acesso.svg);
+    background-size: cover;
+    background-color: #760301;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+
+.main{
+    padding: 0px 21px;
+}
+
+
+
+/* div da logo */
+ .groupLogin{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 83px;
+ }
+
+
+ /* logo */
+  .groupLogin img{
+    width: 100px;
+  }
+ 
+  /* frase da logo */
+  .groupLogin h1{
+    font-family:"Playfair Display", serif;
+    font-weight: bold;
+    color: var(--cor--input);
+    font-size: 30px;
+  }
+
+ 
+/* seta para voltar */
+.fa-caret-left{
+    position: absolute;
+    top: -52px;
+    left: 0;
+    font-size: 34px;
+    color: var(--cor--input); /*verificar*/
+    cursor: pointer;
+
+}
+
+
