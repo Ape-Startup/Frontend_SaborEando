@@ -11,7 +11,7 @@
         --cor--confirmacao: #008124;
          --cor--erro: #8c2e0e;
         --cor--info: #0077a9;
-        --cor--aviso: ##e8d000;
+        --cor--aviso: #e8d000;
         --cor--preto:black;
          --cor--branco:white;
         
@@ -81,7 +81,7 @@
     top: -22px;
     left: 0;
     font-size: 34px;
-    color: var(--cor--input); /*verificar*/
+    color:#F3F4F5; /*verificar*/
     cursor: pointer;
 
 }
@@ -154,8 +154,9 @@ input:-webkit-autofill {
  text-align: center;
  }
 
- .btnDivLogin .btnLogin{
+ .btnDivLogin #entrarButton{
   background-color: #A60402;
+  border: none;
   color: var(--cor--input); /*verificar*/
   padding: 15px;
   font-family: "Urbanist", sans-serif;
@@ -165,8 +166,14 @@ input:-webkit-autofill {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
  }
 
- .btnDivLogin .btnLogin:hover{
+
+ .btnDivLogin #entrarButton:hover{
   background-color: #970402; /*verificar*/
+ }
+
+
+ .btnDivLogin #entrarButton:focus{
+  background-color: #760301; /*verificar*/
  }
 
  /* logins alternativos */
@@ -199,9 +206,9 @@ input:-webkit-autofill {
 
 
  .btnLoginDiv a{
-  border: 1px solid var(--cor--input); /*verificar*/ 
+  border: 1px solid #F3F4F5; /*verificar*/ 
   background-color: transparent;
-  color: var(--cor--input); /*verificar*/
+  color: #F3F4F5; /*verificar*/
   padding: 15px;
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
@@ -210,7 +217,18 @@ input:-webkit-autofill {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
  }
 
+ .btnLoginDiv a:hover{
+  border: 1px solid #DBDCDF; /*verificar*/ 
+  color: #DBDCDF; /*verificar*/
+ }
+
+ .btnLoginDiv a:focus{
+  border: 1px solid #DBDCDF; /*verificar*/ 
+  color: #DBDCDF; /*verificar*/
+ }
+
  .btnLoginDiv i{
   margin-right: 8px;
   font-size: 21px; /*verificar - figma  */
- }
+}
+
