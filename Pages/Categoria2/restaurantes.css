@@ -1,3 +1,57 @@
+/* header */
+
+.rectangle-div {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(166, 166, 166, 0.01);
+    border-radius: 0px 0px 20px 20px;
+    background-color: #a60402;
+    height: 126px;
+    }
+
+.fa-caret-left {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    margin-left:8px;
+    }
+.logo-horizontal-saborando-2 {
+    width: 116px;
+    position: relative;
+    height: 49px;
+    overflow: hidden;
+    flex-shrink: 0;
+    }
+.seta-logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 235px;
+    padding-top: 37px;
+    padding-left: 8px;
+    }
+
+.titulo-restaurante {
+    width: 87px;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Urbanist;
+    color: #f7f1e8;
+    text-align: center;
+    display: inline-block;
+    margin-left: 152px;
+    margin-top: 2px; 
+    }
+
 /* filtro */
 
     .filtro {
