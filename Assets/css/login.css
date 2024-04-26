@@ -12,7 +12,7 @@
          --cor--erro: #8c2e0e;
         --cor--info: #0077a9;
         --cor--aviso: ##e8d000;
-        --cor-preto:black;
+        --cor--preto:black;
          --cor--branco:white;
         
 
@@ -35,12 +35,12 @@
 
 
 
+
+
   body{
     background-image: url(../../Assets/img/bg-acesso.svg);
     background-size: cover;
     background-color: #760301;
-    height: 100vh;
-    overflow: hidden;
     background-repeat: no-repeat;
   }
 
@@ -57,7 +57,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 83px;
+    margin-top: 57px;
  }
 
 
@@ -78,7 +78,7 @@
 /* seta para voltar */
 .fa-caret-left{
     position: absolute;
-    top: -52px;
+    top: -22px;
     left: 0;
     font-size: 34px;
     color: var(--cor--input); /*verificar*/
@@ -86,4 +86,131 @@
 
 }
 
+/* form */
+.areaLogin{
+margin-top: 27px;
+}
 
+
+.areaLogin .form{
+  background-color: #D9B88F; /*verificar*/
+  padding: 35px 21px 27px;
+  border-radius: 30px;
+  
+}
+
+.inputDiv{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+ 
+}
+
+.inputDiv label{
+ color: #400207; /*verificar*/
+ font-family: "Urbanist", sans-serif;
+ font-size: 16px;
+ margin-bottom: 7px;
+}
+
+.inputDiv input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+
+
+.inputDiv input{
+  padding-left: 10px;
+  border: none;
+  background-color: var(--cor--input);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+  width: 100%;
+  height: 45px;
+  border-radius: 12px;
+}
+
+.inputDiv input::placeholder{
+  color: var(--cor--placeholder);
+}
+
+.inputDiv input:focus{
+  border: 1px solid var(--cor--preto);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--cor--input) inset !important;
+  color: #fff !important;
+}
+
+/* botão para entrar */
+ .btnDivLogin{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 32px;
+ text-align: center;
+ }
+
+ .btnDivLogin .btnLogin{
+  background-color: #A60402;
+  color: var(--cor--input); /*verificar*/
+  padding: 15px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+ }
+
+ .btnDivLogin .btnLogin:hover{
+  background-color: #970402; /*verificar*/
+ }
+
+ /* logins alternativos */
+
+ .loginExtra{
+  margin-top: 21px; /* para não ficar ruim de ler por conta da imagem*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+ }
+
+
+ .loginExtra p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  color: var(--cor--input); /*verificar*/
+ }
+
+ .btnLoginDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 37px;
+ }
+
+
+ .btnLoginDiv a{
+  border: 1px solid var(--cor--input); /*verificar*/ 
+  background-color: transparent;
+  color: var(--cor--input); /*verificar*/
+  padding: 15px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+ }
+
+ .btnLoginDiv i{
+  margin-right: 8px;
+  font-size: 21px; /*verificar - figma  */
+ }
