@@ -63,6 +63,9 @@ function success(position) {
                     icon: restauranteIcon
                 }).addTo(map)
                     .bindPopup(`<div class="cardMap">
+                    <div class=imgDiv> 
+                    <img  class=imgMap src="${restaurante.img}" alt="${restaurante.nome}">
+                    </div>
                                 <h3 class="nomeRestaurante">${restaurante.nome}</h3>
                                 <p>${restaurante.endereco} </p> 
                                 <h4> Telefone: ${restaurante.telefone}<h4>
@@ -127,6 +130,9 @@ function search() {
                         icon: restauranteIcon
                     }).addTo(map)
                         .bindPopup(`<div class="cardMap">
+                        <div class=imgDiv> 
+                        <img  class=imgMap src="${restaurante.img}" alt="${restaurante.nome}">
+                        </div>
                                     <h3 class="nomeRestaurante">${restaurante.nome}</h3>
                                     <p>${restaurante.endereco} </p> 
                                     <h4> Telefone: ${restaurante.telefone}<h4>
@@ -164,6 +170,9 @@ function initializeMap() {
                     icon: restauranteIcon
                 }).addTo(map)
                     .bindPopup(`<div class="cardMap">
+                                <div class=imgDiv> 
+                                <img  class=imgMap src="${restaurante.img}" alt="${restaurante.nome}">
+                                </div>
                                 <h3 class="nomeRestaurante">${restaurante.nome}</h3>
                                 <p>${restaurante.endereco} </p> 
                                 <h4> Telefone: ${restaurante.telefone}<h4>
