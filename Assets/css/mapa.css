@@ -1,0 +1,94 @@
+:root {
+    --cor--primaria: #A60402;
+    --cor--secundaria: #DFC4A2;
+    --cor--input:#F0E4D4;
+    --cor--placeholder:#A9A197;
+    --cor--bg:#F7F1E8;
+    --cor--hover--botao: #970402;
+    --cor--press--botao: #760301;
+    --cor--confirmacao: #008124;
+    --cor--erro: #8c2e0e;
+    --cor--info: #0077a9;
+    --cor--aviso: ##e8d000;
+    --cor-preto:black;
+    --cor--branco:white;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+
+
+#map { 
+    width:100%;
+    height: 70vh;
+    margin: 100px auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+  
+  }
+
+
+  .mapa{
+    position: relative;
+  }
+
+
+
+  .leaflet-control-container{
+    display: none;
+  }
+
+
+ .searchContainer{
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    z-index: 9999;
+ } 
+ 
+ 
+ .searchContainer input{
+    position: relative;
+    padding-left: 10px;
+    width: 307px;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--cor--input);
+ }
+
+.searchContainer input:hover{
+    background-color: var(--cor--secundaria);
+}
+
+.searchContainer input::placeholder{
+color: var(--cor--placeholder);
+}
+
+.searchContainer input:focus{
+    border: 1px solid black;
+}
+
+ .fa-magnifying-glass{
+   position: absolute;
+   right: 20px;
+   top: 12px;
+   color: var(--cor--placeholder);  /*verificar*/
+}
+
