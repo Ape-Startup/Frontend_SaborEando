@@ -1,0 +1,22 @@
+/* Mutavel - receberá alteração*/
+/*Mudara a depender da pagina que estará, neste caso é a home*/
+/* Apenas mudar o nome da classe e adicionar ao css desejado*/
+
+/*Inicio da navegação*/
+nav .perfil .barra {
+    background-color: var(--cor--primaria);
+}
+
+nav .perfil{
+    color: var(--cor-preto);
+}
+/*Fim da navegação*/
+header .container-inferior{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte);
+    color: var(--cor--branco);
+    font-size: 1.5em;
+    margin-top: 3.5em;
+}

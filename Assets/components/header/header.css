@@ -1,0 +1,41 @@
+/*Inicio de Header*/
+header{
+    background-color: var(--cor--primaria);
+    width: 100%;
+    height: 126px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 25px 25px;
+}
+
+
+header .container {
+    width: 90%;
+    flex-direction: column;
+}
+
+header .container-superior{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .3em;
+    color: var(--cor--input);
+    font-family: var(--fonte);
+}
+
+header .container-esquerdo{
+    display: flex;
+    align-items: center;
+}
+
+header .container-esquerdo img{
+    width: 50px;
+}
+
+header .container-esquerdo span{
+    font-family: var(--fonte--logo);
+    font-weight: bold;
+    margin-left: .5em;
+}
+
+/*Fim da Header*/

@@ -1,0 +1,58 @@
+/* Mutavel - receberá alteração*/
+/*Mudara a depender da pagina que estará, neste caso é a home*/
+/* Apenas mudar o nome da classe e adicionar ao css desejado*/
+
+/*Inicio da navegação*/
+nav .eventos .barra {
+    background-color: var(--cor--primaria);
+}
+
+nav .eventos{
+    color: var(--cor-preto);
+}
+/*Fim da navegação*/
+
+/*Inicio de Header*/
+header .container .container-inferior{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 0.3em;
+    font-weight: bolder;
+    border: none;
+    background-color: var(--cor--input);
+    border-radius: 16px;
+    padding: 0.01em;
+}
+
+header .container .container-inferior textarea{
+    border-radius: 16px 0 0 16px;
+    height: 1em;
+    padding: .9em .2em 1.3em 1em;
+    width: 90%;
+    resize: none;
+    overflow: hidden;
+    background-color: var(--cor--input);
+    border: none;
+    color: var(--cor--placeholder);
+    outline: none;
+}
+header .container .container-inferior textarea::placeholder{
+    color: var(--cor--placeholder);
+    font-family: var(--cor--placeholder);
+}
+
+header .container .container-inferior .pesquisa{
+    font-family: inherit;
+    background-color: var(--cor--input);
+    color: var(--cor--placeholder);
+    padding: 0.63em .2em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0 16px 16px 0;
+    overflow: hidden;
+    width: 10%;
+}
+/*Fim de Mutavel*/
+/*Inicio da Header*/
