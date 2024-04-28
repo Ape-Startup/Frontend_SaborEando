@@ -42,10 +42,11 @@ input:-webkit-autofill {
 
 #map { 
     width:100%;
-    height: 70vh;
-    margin: 100px auto;
+    height: 80vh;
+    margin: -15px auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
 
   
   }
