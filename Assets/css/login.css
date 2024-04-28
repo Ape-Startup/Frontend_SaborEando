@@ -154,7 +154,12 @@ input:-webkit-autofill {
  text-align: center;
  }
 
- .btnDivLogin #entrarButton{
+
+
+
+
+/* botão ativo */
+ .btnDivLogin .btnLogin.active{
   background-color: #A60402;
   border: none;
   color: var(--cor--input); /*verificar*/
@@ -167,14 +172,41 @@ input:-webkit-autofill {
  }
 
 
- .btnDivLogin #entrarButton:hover{
+ .btnDivLogin .btnLogin:hover{
   background-color: #970402; /*verificar*/
  }
 
 
- .btnDivLogin #entrarButton:focus{
+ .btnDivLogin .btnLogin:focus{
   background-color: #760301; /*verificar*/
  }
+
+
+ /* botão desativo */
+
+ .btnDivLogin .btnLogin{
+  background-color: #caa4a3; /*verificar*/
+  border: none;
+  color: var(--cor--input); /*verificar*/
+  padding: 15px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+ }
+
+ .btnLogin:disabled:hover {
+  background-color: #caa4a3;
+}
+
+
+.btnDivLogin:disabled{
+  cursor: not-allowed;
+ }
+
+
+
 
  /* logins alternativos */
 
