@@ -44,31 +44,49 @@
     
     /* filtro */
 
-    .filtro {
-        position: relative;
-        line-height: 14px;
+
+        .filtro .ativo{
+            /* possivel opção menor
+            height: 20px;
+            width: 77px;*/
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border-radius: 5px;
+            font-family: var(--fonte);
+            color: var(--cor--branco);
+            font-weight: 500;
+            position: relative;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            background-color: #A60402;
+            height: 20px;
+            width: 77px;
+            flex-direction: row;
+            padding: 8px;
+            margin-top: 26px;
+            margin-bottom: 37px;
+            margin-left: 16px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 14px;
         }
-        
-    .filtro-parent {
-        position: relative;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 6px;
-        background-color: #740301;
-        height: 20px;
-        width: 77px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-        margin-top: 26px;
-        margin-bottom: 37px;
-        margin-left: 16px;
-        box-sizing: border-box;
-        text-align: center;
-        font-size: 14px;
-        color: #f2e6d8;
-        font-family: Urbanist;
+
+        .filtro span {
+            padding-left: .5em;
+        }
+
+        .filtro .ativo :hover {
+            background-color:var(--cor--hover--botao);
+        }
+        .filtro .ativo :active {
+            background-color:#760301;
+        }
+        .filtro .active :focus {
+            background-color: #A60402;
+            border: #D68C8B 2px solid;
+        }
+        .filtro .ativo :disabled {
+            background-color: rgba(166, 4, 2, 0.3);
         }
         
         /* trilha titulo */
