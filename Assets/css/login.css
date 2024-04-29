@@ -185,7 +185,7 @@ input:-webkit-autofill {
  /* botão desativo */
 
  .btnDivLogin .btnLogin{
-  background-color: #caa4a3; /*verificar*/
+  background-color: #edcdcc; /*verificar*/
   border: none;
   color: var(--cor--input); /*verificar*/
   padding: 15px;
@@ -197,7 +197,7 @@ input:-webkit-autofill {
  }
 
  .btnLogin:disabled:hover {
-  background-color: #caa4a3;
+  background-color: #edcdcc;
 }
 
 
