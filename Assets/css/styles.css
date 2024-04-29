@@ -2,7 +2,7 @@
 --cor--primaria: #A60402;
 --cor--secundaria: #DFC4A2;
 --cor--input:#F0E4D4;
---cor--placeholder:A9A197;
+--cor--placeholder:#A9A197;
 --cor--bg:#F7F1E8;
 --cor--hover--botao: #970402;
 --cor--press--botao: #760301;
@@ -12,11 +12,14 @@
 --cor--aviso: ##e8d000;
 --cor-preto:black;
 --cor--branco:white;
+--fonte:"Urbanist", sans-serif;
+--fonte--logo:"Playfair Display", serif;
 }
 
 body {
     margin: 0;
     top:0;
+    padding: 0;
     right: 0 ;
     line-height: normal;
     width: 100%;
