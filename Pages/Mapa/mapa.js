@@ -14,6 +14,7 @@ redIcon = L.icon({
     shadowSize: [71, 58]
 });
 
+// Geolocalização
 function success(position) {
     console.log(position.coords.latitude, position.coords.longitude);
     userLatitude = position.coords.latitude;
