@@ -1,0 +1,272 @@
+
+/* avatar */
+
+.ellipse-avatar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    gap: 12px;
+    text-align: center;
+    font-size: 22px;
+    color: #270104;
+    font-family: Urbanist;
+    }
+
+.frame-avatar {
+    width: 100px;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #5b0201;
+    height: 100px;
+    object-fit: cover;
+    z-index: 0;
+    }
+.perfil-nome {
+    position: relative;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    font-weight: 600;
+    }
+.perfil-email {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    }
+.perfil-informação {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    z-index: 1;
+    }
+
+    .ellipse-camera {
+        position: absolute;
+        margin: 0 !important;
+        top: 71px;
+        left: 55%;
+        height: 28.5px;
+        z-index: 3;
+        }
+
+    .fa-camera {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        align-content: center;
+        padding: 3px;
+        width: 28.5px;;
+        height: 28.5px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        background-color: #5b0201;
+        color: white;
+
+        }
+
+/* Perfil linhas */
+
+.frame-perfil {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px 26px;
+    text-align: center;
+    font-size: 18px;
+    color: #270104;
+    font-family: Urbanist;
+    margin-top: 23px;
+    margin-left: 17px;
+    }
+
+.row-perfil {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    text-align: left;
+    font-size: 18px;
+    color: #270104;
+    font-family: Urbanist;
+        }
+
+.fa-route,
+.fa-utensils,
+.fa-calendar-check,
+.fa-map-pin,
+.fa-gear,
+.fa-circle-question,
+.fa-arrow-right-from-bracket {
+    width: 30px;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+    }
+
+.row-content {
+    width: 175px;
+    position: relative;
+    letter-spacing: -0.24px;
+    line-height: 8px;
+    font-weight: 500;
+    display: inline-block;
+    height: 21px;
+    flex-shrink: 0;
+    align-items: center;
+    }
+
+
+.termos{
+    margin-top: 35px;
+}
+
+.termos-de-uso,
+.politicas-de-privacidade {
+    width: auto;
+    position: relative;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 17px;
+    font-family: Urbanist;
+    color: #270104;
+    text-align: left;
+        }
+
+/* nav bar */
+
+/*Configurações gerais*/
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light+Two&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*Fim de Imports*/
+
+/*Inicio da navegação*/
+nav .perfil .barra {
+    background-color: var(--cor--primaria);
+}
+
+nav .perfil{
+    color: var(--cor-preto);
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    text-align: left;
+    bottom: 0;
+    background-color: var(--cor--branco);
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .home, .mapa, .eventos, .perfil, .categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte);
+    color: var(--cor--placeholder);
+    width: 19.999vw;
+    height: 80px;
+}
+
+nav span{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+nav .barra{
+    content: '';
+    width: 100%;
+    height: 3px;
+    margin-bottom: auto;
+    top: 0;
+}
+
+/*Responsividade da navegação*/
+@media screen and (max-width: 350px) {
+    nav span{
+        font-size: 0.6em;
+        margin-top: 5px;
+    }
+}
+/*Fim de Responsividade da navegação*/
+/*Fim da navegação*/
+
+/*Inicio de Header*/
+header{
+    background-color: var(--cor--primaria);
+    width: 100%;
+    height: 126px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 25px 25px;
+}
+
+
+header .container {
+    width: 90%;
+    flex-direction: column;
+}
+
+header .container-superior{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .3em;
+    color: var(--cor--input);
+    font-family: var(--fonte);
+}
+
+header .container-esquerdo{
+    display: flex;
+    align-items: center;
+}
+
+header .container-esquerdo img{
+    width: 50px;
+}
+
+header .container-esquerdo span{
+    font-family: var(--fonte--logo);
+    font-weight: bold;
+    margin-left: .5em;
+}
+
+/* header */
+header .container-inferior{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: Urbanist;
+    color: var(--cor--branco);
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 3.5em;
+}
+
+
+/*Fim da Header*/
+/*Fim de Configurações gerais*/
