@@ -1,30 +1,34 @@
+
 :root {
-    --cor--primaria: #A60402;
-    --cor--secundaria: #DFC4A2;
-    --cor--input:#F0E4D4;
-    --cor--placeholder:A9A197;
-    --cor--bg:#F7F1E8;
-    --cor--hover--botao: #970402;
-    --cor--press--botao: #760301;
-    --cor--confirmacao: #008124;
-    --cor--erro: #8c2e0e;
-    --cor--info: #0077a9;
-    --cor--aviso: ##e8d000;
-    --cor-preto:black;
-    --cor--branco:white;
+--cor--primaria: #A60402;
+--cor--secundaria: #DFC4A2;
+--cor--input:#F0E4D4;
+--cor--placeholder:#A9A197;
+--cor--bg:#F7F1E8;
+--cor--hover--botao: #970402;
+--cor--press--botao: #760301;
+--cor--confirmacao: #008124;
+--cor--erro: #8c2e0e;
+--cor--info: #0077a9;
+--cor--aviso: ##e8d000;
+--cor-preto:black;
+--cor--branco:white;
+--fonte:"Urbanist", sans-serif;
+--fonte--logo:"Playfair Display", serif;
+}
+
+body {
+    margin: 0;
+    top:0;
+    padding: 0;
+    right: 0 ;
+    line-height: normal;
+    width: 100%;
+    position: relative;
+    background-color: var(--cor--bg);
+    overflow-y: auto;
+    text-align: left;
+    font-size: 18px;
+    color: #270104;
+    font-family: Urbanist;
     }
-    
-    body {
-        margin: 0;
-        top:0;
-        right: 0;
-        line-height: normal;
-        width: 100%;
-        position: relative;
-        background-color: var(--cor--bg);
-        overflow-y: auto;
-        text-align: left;
-        font-size: 18px;
-        color: #270104;
-        font-family: Urbanist;
-        }

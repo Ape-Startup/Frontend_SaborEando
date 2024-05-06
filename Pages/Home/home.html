@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/Assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" />
+    <title>Sabor&ando - Home</title>
+</head>
+<body>
+    <header>
+
+        <!--Pagina atual-->
+        <div class="container">
+            <!--Container superior - será fixo em todas as paginas-->
+            <div class="container-superior">
+                <div class="container-esquerdo">
+                    <!--Logo-->
+                    <img src="/Assets/img/Logo.svg" alt="logo Sabor&ando">
+                    <span>Sabor&Ando</span>
+                    <!--Fim da Logo-->
+                </div>
+                <div class="container-direito">
+                    <!--Local-->
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Pernambuco</span>
+                    <!--Fim de Local-->
+                </div>
+            </div>
+            <!--Fim Container superior-->
+            <!--Container inferior - o que vai mudar a depender da página-->
+            <div class="container-inferior">
+                <!--Input de pesquisa-->
+                <textarea placeholder="Buscar"></textarea>
+                <div class="pesquisa"><i class="fa-solid fa-magnifying-glass fa-2xs"></i></div>
+                <!--Fim do Input de pesquisa-->
+            </div>
+            <!--Fim Container inferior-->
+        </div>
+        <!--Fim da div de Pagina atual-->
+
+    </header>
+
+    <main>
+        <!-- componente do banner  -->
+        <div class="component-banner">
+            <img class="component-banner-child" alt="" src="/Assets/img/banner provisorio rest.svg">
+            <div class="component-banner-item">
+            </div>
+            <div class="oficina-de-cozinha">Oficina de cozinha contemporânea pelo chef Fernando Bianchi</div>
+        </div>
+        <!-- filtro -->
+
+        <div class="filtro">
+            <div class="ativo">Filtro</div>
+            
+        </div>
+
+        <!-- trilhas mais visitadas -->
+
+        <div class="trilhas-mais-visitadas">Trilhas mais visitadas </div>
+
+        <div class="parent-caldeirada">
+            <!-- card -->
+            <div class="trail-container" id="uvaContainer">
+                <div class="item-container">
+                    <img class="item-inner" alt="" src="/Assets/img/card provisorio 260x150.svg">
+                    <div class="item-content">
+                    </div>
+                </div>
+                <div class="trail-subtitle">Trilha da uva</div>
+
+                <div class="like-parent">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+
+            </div>
+            <!-- fim do card -->
+            <!-- card -->
+            <div class="trail-container" id="">
+                <div class="item-container">
+                    <img class="item-inner" alt="" src="/Assets/img/card provisorio 260x150.svg">
+                    <div class="item-content">
+                    </div>
+                </div>
+                <div class="trail-subtitle">Trilha do cacau</div>
+
+                <div class="like-parent">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+            </div>
+            <!-- Fim do card -->
+            <!-- card -->
+            <div class="trail-container">
+                <div class="item-container">
+                    <img class="item-inner" alt="" src="/Assets/img/card provisorio 260x150.svg">
+                    <div class="item-content">
+                    </div>
+                </div>
+                <div class="trail-subtitle">Trilha asiática</div>
+
+                <div class="like-parent">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div> 
+            </div>
+            <!-- fim do card -->
+            <!-- card ver mais -->
+            <div class="trail-container">
+                <div class="item-container">
+                    <img class="item-inner" alt="" src="/Assets/img/card provisorio 260x150.svg">
+                    <div class="item-content">
+                    </div>
+                </div>
+                <div class="see-more-text">Ver Mais</div>
+            </div>
+        </div>
+            <!-- fim do card ver mais -->
+
+        <!-- outras trilhas -->
+        <div class="outras-trilhas">Outras trilhas</div>
+
+        <div class="for-you-section">
+            <!-- card -->
+            <div class="item-wrapper">
+                <div class="item-parent">
+                    <img class="item-image" alt="" src="/Assets/img/card prov horizontal 140x190.svg">
+                    <div class="item-title">Trilha de bar</div>
+                </div>
+            </div>
+            <!-- fim do card -->
+            <!-- card -->
+            <div class="item-wrapper">
+                <div class="item-parent">
+                    <img class="item-image" alt="" src="/Assets/img/card prov horizontal 140x190.svg">
+                    <div class="item-title">Trilha mineira</div>
+                </div>
+            </div>
+            <!-- fim do card -->
+            <!-- card -->
+            <div class="item-wrapper">
+                <div class="item-parent">
+                    <img class="item-image" alt="" src="/Assets/img/card prov horizontal 140x190.svg">
+                    <div class="item-title">Trilha asiática</div>
+                </div>
+            </div>
+            <!-- fim do card -->
+            <!-- card -->
+            <div class="item-wrapper">
+                <div class="item-parent">
+                    <img class="item-image" alt="" src="/Assets/img/card prov horizontal 140x190.svg">
+                    <div class="item-title">Trilha contemporânea</div>
+                </div>
+            </div>
+            <!-- fim do card -->
+            <!-- ver mais no final ??? -->
+            <div class="see-more">Ver Mais</div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <!--Inicio da Nav-->
+    <nav>
+        <a href="#">
+            <div class="home">
+                <div class="barra"></div><i class="fa-solid fa-house fa-2x"></i><span>Home</span>
+            </div>
+        </a>
+        <a href="./mapa.html">
+            <div class="mapa">
+                <div class="barra"></div><i class="fa-regular fa-map fa-2x"></i><span>Mapa</span>
+            </div>
+        </a>
+        <a href="./eventos.html">
+            <div class="eventos">
+                <div class="barra"></div><i class="fa-regular fa-calendar fa-2x"></i><span>Eventos</span>
+            </div>
+        </a>
+        <a href="./categorias.html">
+            <div class="categorias">
+                <div class="barra"></div><i class="fa-solid fa-utensils fa-2x"></i><span>Categorias</span>
+            </div>
+        </a>
+        <a href="./perfil.html">
+            <div class="perfil">
+                <div class="barra"></div><i class="fa-regular fa-user fa-2x"></i><span>Perfil</span>
+            </div>
+        </a>
+    </nav>
+    <!--Fim da Nav-->
+
+    </footer>
+</body>
+</html>
