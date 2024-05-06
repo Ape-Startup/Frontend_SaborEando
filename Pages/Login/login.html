@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Assets/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="main">
+        <div class="groupLogin">
+            <img src="../../Assets/img/Logo.svg" alt="logo do Sabor&Ando">
+            <h1>Sabor&Ando</h1>
+          <a href="#"><i class="fa-solid fa-caret-left"></i></a> <!--Adicionar o caminho--> 
+        </div>
+        <div class="areaLogin">
+            <form class="form" action="" method="post">
+                <div class="inputDiv">
+                    <label for="email"> E-mail </label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                
+                <div class="inputDiv">
+                    <label for="senha"> Senha </label>
+                    <input type="password" name="email" id="senha" placeholder="Digite sua senha" required>
+                </div>                
+            </form>
+            <div class="btnDivLogin">
+                <button type="submit" class="btnLogin" id="entrarButton" disabled>Entrar </button> 
+            </div>
+            <div class="loginExtra">
+                <p>Ou logar com</p>
+                <div class="btnLoginDiv">
+                    <a href="#"><i class="fa-brands fa-apple"></i> Entre usando sua conta Apple</a>
+                    <a href="#"><i class="fa-brands fa-google"></i> Entre usando sua conta Google</a>
+                </div>
+              
+
+            </div>
+          
+        
+        
+        </div>
+               
+    </section>
+
+    <script src="./login.js"></script>
+</body>
+</html>
