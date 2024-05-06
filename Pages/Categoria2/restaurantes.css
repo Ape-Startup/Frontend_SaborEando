@@ -1,0 +1,179 @@
+/* header */
+
+.rectangle-div {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(166, 166, 166, 0.01);
+    border-radius: 0px 0px 20px 20px;
+    background-color:var(--cor--primaria);
+    height: 126px;
+    }
+
+.fa-caret-left {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    margin-left:8px;
+    font-size: 34px;
+    }
+.logo-horizontal-saborando-2 {
+    width: 116px;
+    position: relative;
+    height: 49px;
+    overflow: hidden;
+    flex-shrink: 0;
+    }
+.seta-logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 235px;
+    padding-top: 37px;
+    padding-left: 8px;
+    }
+
+.titulo-restaurante {
+    width: 87px;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Urbanist;
+    color: #f7f1e8;
+    text-align: center;
+    display: inline-block;
+    margin-left: 152px;
+    margin-top: 2px; 
+    }
+
+/* filtro */
+
+    .filtro {
+        position: relative;
+        line-height: 14px;
+        }
+        
+    .filtro-parent {
+        position: relative;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        border: none;
+        background-color: var(--cor--primaria);
+        height: 20px;
+        width: 77px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        margin-top: 29px;
+        margin-bottom: 37px;
+        margin-left: 16px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 14px;
+        color: #f2e6d8;
+        font-family: Urbanist;
+        }
+    
+    .filtro-parent:hover{
+        background-color: var(--cor--hover--botao);
+    }
+
+    .filtro-parent:active{
+        background-color: var(--cor--press--botao);
+    }
+
+/* cards restaurantes */
+.frame-child {
+    width: 178px;
+    position: relative;
+    border-radius: 0px 12px 12px 0px;
+    height: 79px;
+    object-fit: cover;
+    }
+
+.frame-item {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    height: 60px;
+    object-fit: cover;
+    margin-left: -27px;
+    background-color: var(--cor--bg);
+    border: 4px solid var(--cor--bg); 
+    }
+
+.rectangle-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 0;
+    }
+
+.restaurante-nome {
+    width: 169px;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    flex-shrink: 0;
+    z-index: 1;
+    }
+
+.aberto-agora {
+    width: auto;
+    position: absolute;
+    margin: 0 !important;
+    top: 53px;
+    left: 261px;
+    font-size: 10px;
+    color: #008124;
+    display: inline-block;
+    z-index: 2;
+    }
+
+.fechado-agora {
+    width: auto;
+    position: absolute;
+    margin: 0 !important;
+    top: 53px;
+    left: 258px;
+    font-size: 10px;
+    color: #8c2e0e;
+    display: inline-block;
+    z-index: 2;
+    }
+
+.frame-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    }
+
+.frame-parent {
+    position: relative;
+    width: 100%;
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-family: Urbanist;
+    }
