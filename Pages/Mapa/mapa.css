@@ -37,6 +37,9 @@ input:-webkit-autofill {
 }
 
 
+body{
+  overflow-x: hidden;
+}
 
 
 #map { 

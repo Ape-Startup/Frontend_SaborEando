@@ -24,6 +24,9 @@
     font-family:'Urbanist';
 }
 
+body{
+    overflow-x: hidden;
+}
 
 /* Estilização da parte histórica de categoria */
 
@@ -123,6 +126,51 @@ justify-content: center;
     padding: 15px;
     border-radius: 12px;
     width: 350px;
-    text-align: center
-    ;
+    text-align: center;
+}
+
+
+/* responsivo */
+
+@media(min-width:330px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 30px;
+
+    }
+}
+
+@media(min-width:350px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 40px;
+
+    }
+}
+
+@media(min-width:360px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 45px;
+
+    }
+}
+
+@media(min-width:375px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 50px;
+
+    }
+}
+
+
+@media(min-width:390px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 55px;
+
+    }
+}
+
+@media(min-width:400px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 60px;
+
+    }
 }
