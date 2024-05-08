@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Assets/css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../../Assets/components/button/botoes.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <section class="main">
+        <div class="groupLogin">
+            <img src="../../Assets/img/Logo.svg" alt="logo do Sabor&Ando">
+          <a href="#"><i class="fa-solid fa-caret-left"></i></a> <!--Adicionar o caminho--> 
+          <div class="passos">
+            <div class="checkContainer">
+                <div class="checkPasso" id="marcado"></div>
+                <div class="checkPasso"></div>
+            </div>
+            <span>Passo</span>
+            <span>1 de 2</span>
+          </div>
+        </div>
+        <div class="areaLogin">
+            <form class="form" action="" method="post">
+                <div class="input-grande">
+                    <label for="email"> E-mail </label>
+                    <input type="email" class="ativo" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-grande">
+                    <label for="email"> Confirme seu E-mail </label>
+                    <input type="email" class="ativo" name="confirm-email" placeholder="Digite novamente seu e-mail" required>
+                </div>
+                
+                <div class="input-grande">
+                    <label for="senha"> Senha </label>
+                    <div class="senha-container">
+                        <input type="password" class="ativo" name="senha" placeholder="Digite sua senha" required>
+                        <div id="icon">
+                            <div class="tooltip-container">
+                                <i class="fa-regular fa-circle-question"></i>
+                                  <span class="tooltip">6 digitos*<br>1 letra maiúscula*<br>1 minúscula*</span><!--É mostrado ao clickar na ?--> 
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-grande">
+                    <label for="senha"> Confirme sua Senha </label>
+                    <input type="password" class="ativo" name="confirm-senha" placeholder="Digite novamente sua senha" required>
+                </div>  
+
+                <div class="checkbox-container">
+                    <div class="content">
+                        <input type="checkbox" class="ui-checkbox">
+                      </div>
+                    <span>Aceito <a href="https://docs.google.com/document/d/1D0sw4vdsrfSyAnr3c1LaJ0jcbkEXR3bjrfI1zxWHA0o/edit?usp=sharing">termos de compromisso e privacidade</a> do app</span>
+                </div>
+            </form>
+            <div class="primarios">
+               <a href="./cadastro2.html"><button type="submit" class="ativo" id="entrarButton" disabled>Próximo </button> </a>
+            </div>
+          
+        </div>
+               
+    </section>
+    <script src="./cadastro.js"></script>
+</body>
+</html>

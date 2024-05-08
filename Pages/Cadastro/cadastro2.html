@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Assets/css/cadastro.css">
+    <link rel="stylesheet" href="../../Assets/css/cadastro2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../../Assets/components/button/botoes.css">
+    <title>Cadastro 2</title>
+</head>
+<body>
+    <section class="main">
+        <div class="groupLogin">
+            <img src="../../Assets/img/Logo.svg" alt="logo do Sabor&Ando">
+          <a href="./cadastro.html"><i class="fa-solid fa-caret-left"></i></a> <!--Adicionar o caminho--> 
+          <div class="passos">
+            <div class="checkContainer">                
+                <div class="checkPasso"></div>
+                <div class="checkPasso" id="marcado"></div>
+            </div>
+            <span>Passo</span>
+            <span>2 de 2</span>
+          </div>
+        </div>
+        <div class="areaLogin">
+            <form class="form" action="" method="post">
+
+                <h1>Adorariamos saber mais sobre você!</h1>
+
+                <div class="grupo">
+                    <div class="input-pequeno" >
+                        <label for="nome"> Nome </label>
+                        <input type="text" class="ativo" name="nome" placeholder="Digite seu nome" id="nome" required>
+                    </div>
+    
+                    <div class="input-pequeno">
+                        <label for="sobrenome"> Sobrenome </label>
+                        <input type="text" class="ativo" id="sobrenome" name="sobrenome"  placeholder="Digite seus sobrenomes" required>
+                    </div>  
+                </div>
+                             
+                <div class="grupo">
+                    <div class="input-pequeno">
+                        <label for="dat-nasc"> Data de nascimento </label>
+                        <input type="date" class="ativo" id="dat-nasc" name="dat-nasc" placeholder="00/00/0000" required>
+                    </div>  
+    
+                    <div class="input-pequeno">
+                        <label for="tel"> Telefone </label>
+                        <input type="tel" class="ativo" id="tel"  name="tel" placeholder="(00) 00000-0000" required>
+                    </div>  
+                </div>
+                
+                <div class="grupo">
+                    <div class="input-pequeno" >
+                        <label for="cep"> CEP </label>
+                        <input type="text" class="ativo" id="cep" name="cep" placeholder="Digite seu CEP" required>
+                    </div>  
+    
+                    <div class="input-pequeno" >
+                        <label for="pais" id="pais"> País </label>
+                        <select id="pais" name="pais" class="ativo" required>
+                            <option value="padrao">UF</option>
+                            <option value="brasil">Brasil</option>
+                          </select>
+                    </div> 
+                    
+                </div>
+                <div class="grupo">
+                    <div class="input-pequeno" >
+                        <label for="cidade"> Cidade </label>
+                        <input type="password" class="ativo" id="cidade" name="cidade" required>
+                    </div>  
+    
+                    <div class="input-pequeno">
+                        <label for="estado" id="estado"> Estado </label>
+                        <input type="text" class="ativo" id="estado" name="estado" required>
+                    </div>  
+                </div>
+            </div>
+                <div class="primarios">
+                    <button type="submit" class="ativo" id="entrarButton" disabled>Próximo </button> 
+                </div>
+            </form>
+            
+            
+            
+            <div class="logo-fim">
+                <img src="../../Assets/img/Logo.svg" alt="logo do Sabor&Ando">
+                <span>Sabor&Ando</span>
+            </div>
+
+        
+               
+    </section>
+
+</body>
+<script src="./cadastro2.js"></script>
+</html>
