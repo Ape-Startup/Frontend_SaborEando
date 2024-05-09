@@ -51,7 +51,6 @@
         margin: 0 !important;
         top: 71px;
         left: 55%;
-        height: 28.5px;
         z-index: 3;
         }
 
@@ -60,9 +59,8 @@
         top: 0px;
         left: 0px;
         align-content: center;
-        padding: 3px;
-        width: 28.5px;;
-        height: 28.5px;
+        width: 40px;
+        height: 40px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50%;
         background-color: #5b0201;
@@ -154,15 +152,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light+Two&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 /*Fim de Imports*/
 
+/*navbar*/
+
 /*Inicio da navegação*/
-nav .perfil .barra {
-    background-color: var(--cor--primaria);
-}
-
-nav .perfil{
-    color: var(--cor-preto);
-}
-
 nav{
     width: 100%;
     height: 80px;
@@ -171,13 +163,12 @@ nav{
     margin-top: auto;
     align-items: center;
     position: fixed;
-    overflow: hidden;
-    text-align: left;
+    z-index: 9999;
     bottom: 0;
     background-color: var(--cor--branco);
 }
 
-nav a{
+a{
     text-decoration: none;
 }
 
@@ -193,7 +184,6 @@ nav .home, .mapa, .eventos, .perfil, .categorias{
 
 nav span{
     margin-bottom: 10px;
-    font-size: 15px;
 }
 
 nav .barra{
@@ -204,10 +194,18 @@ nav .barra{
     top: 0;
 }
 
+nav .perfil .barra {
+    background-color: var(--cor--primaria);
+}
+
+nav .perfil{
+    color: var(--cor--press--botao);
+}
+
 /*Responsividade da navegação*/
 @media screen and (max-width: 350px) {
     nav span{
-        font-size: 0.6em;
+        font-size: 0.7em;
         margin-top: 5px;
     }
 }
@@ -250,7 +248,6 @@ header .container-esquerdo img{
 
 header .container-esquerdo span{
     font-family: var(--fonte--logo);
-    font-weight: bold;
     margin-left: .5em;
 }
 
@@ -262,7 +259,7 @@ header .container-inferior{
     font-family: Urbanist;
     color: var(--cor--branco);
     line-height: 20px;
-    font-weight: 500;
+    font-weight: medium;
     font-size: 1.5em;
     margin-top: 3.5em;
 }

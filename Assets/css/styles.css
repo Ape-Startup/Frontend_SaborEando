@@ -19,6 +19,15 @@
 --fonte--logo:"Playfair Display", serif;
 }
 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
     margin: 0;
     top:0;
@@ -30,9 +39,10 @@ body {
     background-color: var(--cor--bg);
     overflow-y: auto;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     color: #270104;
     font-family: Urbanist;
+    overflow-x: hidden;
     }
 
     /*botão*/
@@ -219,9 +229,9 @@ h3{
         border-radius: 18px;
     }
 
-    .fa-location-dot{
+    /* .fa-location-dot{
   color: #008124;
-    }
+    } */
 
     .horario{
        text-align: center;
