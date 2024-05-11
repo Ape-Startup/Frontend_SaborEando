@@ -37,8 +37,15 @@
     font-weight: 500;
     font-family: Urbanist;
     color: #000;
-    text-align: center;
     display: inline-block;
     margin-left: 30px;
-    margin-top: 28px;
+    margin-top: 10px;
+}
+
+.conteudo-privacidade p{
+    text-align:left;
+}
+
+.destaque{
+    color: #a60402;
 }
