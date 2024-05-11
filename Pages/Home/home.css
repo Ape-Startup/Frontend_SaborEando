@@ -42,57 +42,10 @@
     font-family: Urbanist;
     }
     
-    /* filtro */
-
-
-        .filtro .ativo{
-            /* possivel opção menor
-            height: 20px;
-            width: 77px;*/
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            border-radius: 5px;
-            font-family: var(--fonte);
-            color: var(--cor--branco);
-            font-weight: 500;
-            position: relative;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-            background-color: #A60402;
-            height: 20px;
-            width: 77px;
-            flex-direction: row;
-            padding: 8px;
-            margin-top: 26px;
-            margin-bottom: 37px;
-            margin-left: 16px;
-            box-sizing: border-box;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .filtro span {
-            padding-left: .5em;
-        }
-
-        .filtro .ativo :hover {
-            background-color:var(--cor--hover--botao);
-        }
-        .filtro .ativo :active {
-            background-color:#760301;
-        }
-        .filtro .active :focus {
-            background-color: #A60402;
-            border: #D68C8B 2px solid;
-        }
-        .filtro .ativo :disabled {
-            background-color: rgba(166, 4, 2, 0.3);
-        }
-        
         /* trilha titulo */
 
-        .trilhas-mais-visitadas {
-            width: 174px;
+        .restaurantes-mais-visitadas {
+            width: 250px;
             position: relative;
             font-size: 18px;
             letter-spacing: -0.24px;
@@ -105,11 +58,12 @@
             align-items: center;
             height: 11.8px;
             margin-left: 16px;
+            margin-top: 26px;
             }
 
-        /* trilha  */
+        /* Restaurante mais vistos  */
 
-        .parent-caldeirada {
+        .parent-restaurante {
             position: relative;
             height: 174px;
             display: flex;
@@ -117,7 +71,7 @@
             align-items: flex-start;
             justify-content: flex-start;
             gap: 22px;
-            margin-top: 10px;
+            margin-top: 15px;
             margin-left: 16px;
             margin-right: 16px;
             text-align: left;
@@ -127,11 +81,11 @@
             overflow-x: auto;
         }
 
-        .parent-caldeirada::-webkit-scrollbar {
+        .parent-restaurante::-webkit-scrollbar {
             display: none;
           }
         
-        .trail-container {
+        .restaurante-container {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
             display: flex;
             flex-direction: column;
@@ -159,18 +113,17 @@
             height: 142px;
         }
         
-        .trail-subtitle {
-            width: 120px;
+        .restaurante-subtitle {
+            width: 200px;
             position: absolute;
             margin: 0;
             top: 110px;
-            left: 12px;
             font-weight: 600;
             display: inline-block;
             z-index: 1;
         }
-
-        .like-parent {
+        /* icones */
+        /* .like-parent {
             width: 59.7px;
             position: absolute;
             margin: 0 !important;
@@ -202,7 +155,7 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 50%;
             background-color: #5b0201;
-            }
+            } */
         
         .see-more-text {
             width: 61px;
@@ -217,9 +170,9 @@
             z-index: 1;
         }
 
-        /* outras trilhas */
+        /* Categorias home */
 
-        .outras-trilhas {
+        .categorias-home {
             width: 108px;
             position: relative;
             font-size: 18px;
@@ -230,10 +183,10 @@
             display: inline-block;
             margin-left: 16px;
             margin-top: 9px;
-            margin-bottom: 16px;
+            margin-bottom: 15px;
             }
 
-            .for-you-section {
+            .categoria-home-section {
                 position: relative;
                 height: 316px;
                 display: flex;
@@ -250,7 +203,7 @@
                 overflow-x: auto;
                 margin-bottom: 30px;
             }
-            .for-you-section::-webkit-scrollbar {
+            .categoria-home-section::-webkit-scrollbar {
                 display: none;
               }
             
@@ -307,6 +260,7 @@ nav{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 nav .home, .mapa, .eventos, .perfil, .categorias{
@@ -370,7 +324,7 @@ header{
     background-color: var(--cor--input);
     border-radius: 16px;
     padding: 0.01em;
-      width: 100%;
+    width: 100%;
 }
 
 
