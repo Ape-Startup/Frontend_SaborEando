@@ -360,7 +360,7 @@ h2{
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 10px;
-    background-image: url(/assets/img/card\ provisorio\ 350x175.svg);
+    background-image: url(/Assets/img/card\ provisorio\ 350x175.svg);
 }
 
 /*recentes*/
@@ -380,11 +380,12 @@ h2{
     height: 100px;
     border-radius: 18px;
     background-color: lightgray;
-    background-image: url(/assets/img/card-provisorio180x100.svg);
-    margin-right: 10px;
+    background-image: url(/Assets/img/card-provisorio180x100.svg);
+    margin-right: 16px;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 10px;
+    
 }
 
 /*cidade*/
@@ -407,7 +408,7 @@ h2{
     height: 145px;
     border-radius: 12px;
     background-color: lightgray;
-    background-image: url(/assets/img/card-provisorio120x145.svg);
+    background-image: url(/Assets/img/card-provisorio120x145.svg);
     margin-right: 10px;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
