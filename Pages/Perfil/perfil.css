@@ -259,9 +259,9 @@ header .container-inferior{
     font-family: Urbanist;
     color: var(--cor--branco);
     line-height: 20px;
-    font-weight: medium;
-    font-size: 1.5em;
-    margin-top: 3.5em;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 4.1em;
 }
 
 
