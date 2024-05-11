@@ -1,0 +1,44 @@
+.fa-caret-left {
+    display:inline-block ;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    cursor: pointer;
+    color: var(--cor--primaria);
+    margin-top: 44px;
+    margin-left:15px;
+    margin-bottom: 20px;
+    font-size: 34px;
+    }
+
+/* titulo */
+
+.titulo-privacidade{
+    width: 273px;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Urbanist;
+    color: #a60402;
+    text-align: center;
+    display: inline-block;
+    left: 7%;
+
+}
+
+.conteudo-privacidade {
+    width: 330px;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: Urbanist;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 28px;
+}
