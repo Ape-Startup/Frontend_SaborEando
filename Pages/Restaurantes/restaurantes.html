@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" />
     <title>Sabor&ando - dia a dia</title>
+
+    <script src="verificarHorario.js"></script>
+
 </head>
 <body>
     <header>
@@ -36,62 +39,27 @@
 
         <!-- cards restaurantes -->
         <div class="categoria-parent">
-            <!-- card fechado agora-->
-            <div class="categoria-container">
+            <!-- card restaurante 1-->
+            <div class="categoria-container" id="restaurante1">
                 <div class="rectangle-parent">
                     <img class="categoria-child" alt="" src="/Assets/img/card provisorio rest 180x80.svg">
                     <img class="categoria-item" alt="" src="/Assets/img/icone rest 60x60.svg">
                 </div>
                 <div class="restaurante-nome"> Yaru - Comida oriental</div>
-                <div class="fechado-agora">Fechado agora</div>
+                <div class="status" id="status-restaurante1">Fechado agora</div>
             </div>
-            <!-- fim do card fechado agora-->
-            <!-- card aberto agora -->
-            <div class="categoria-container">
-                <div class="rectangle-parent">
-                    <img class="categoria-child" alt="" src="/Assets/img/card provisorio rest 180x80.svg">
-                    <img class="categoria-item" alt="" src="/Assets/img/icone rest 60x60.svg">
-                </div>
-                <div class="restaurante-nome"> Yaru - Comida oriental</div>
-                <div class="aberto-agora">Aberto agora</div>
-            </div>
-            <!-- fim do card aberto agora -->
-            <div class="categoria-container">
-                <div class="rectangle-parent">
-                    <img class="categoria-child" alt="" src="/Assets/img/card provisorio rest 180x80.svg">
-                    <img class="categoria-item" alt="" src="/Assets/img/icone rest 60x60.svg">
-                </div>
-                <div class="restaurante-nome"> Yaru - Comida oriental</div>
-                <div class="fechado-agora">Fechado agora</div>
-            </div>
+            <!-- fim do card restaurante 1-->
 
-            <div class="categoria-container">
+            <!-- card restaurante 2 -->
+            <div class="categoria-container" id="restaurante2">
                 <div class="rectangle-parent">
                     <img class="categoria-child" alt="" src="/Assets/img/card provisorio rest 180x80.svg">
                     <img class="categoria-item" alt="" src="/Assets/img/icone rest 60x60.svg">
                 </div>
                 <div class="restaurante-nome"> Yaru - Comida oriental</div>
-                <div class="aberto-agora">Aberto agora</div>
+                <div class="status" id="status-restaurante2">Aberto agora</div>
             </div>
-
-            <div class="categoria-container">
-                <div class="rectangle-parent">
-                    <img class="categoria-child" alt="" src="/Assets/img/card provisorio rest 180x80.svg">
-                    <img class="categoria-item" alt="" src="/Assets/img/icone rest 60x60.svg">
-                </div>
-                <div class="restaurante-nome"> Yaru - Comida oriental</div>
-                <div class="fechado-agora">Fechado agora</div>
-            </div>
-
-            <div class="categoria-container">
-                <div class="rectangle-parent">
-                    <img class="categoria-child" alt="" src="/Assets/img/card provisorio rest 180x80.svg">
-                    <img class="categoria-item" alt="" src="/Assets/img/icone rest 60x60.svg">
-                </div>
-                <div class="restaurante-nome"> Yaru - Comida oriental</div>
-                <div class="aberto-agora">Aberto agora</div>
-            </div>
-
+            <!-- Fim do card restaurante 2 -->
         </div>
 
     </main>
