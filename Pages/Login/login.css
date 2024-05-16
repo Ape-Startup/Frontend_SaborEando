@@ -137,7 +137,7 @@ margin-top: 27px;
 }
 
 .inputDiv input:focus{
-  border: 1px solid var(--cor--preto);
+  border: rgb(115, 104, 91) 2px solid;
 }
 
 input:-webkit-autofill {
@@ -154,9 +154,6 @@ input:-webkit-autofill {
   padding: 0px 32px;
  text-align: center;
  }
-
-
-
 
 
 /* botão ativo */

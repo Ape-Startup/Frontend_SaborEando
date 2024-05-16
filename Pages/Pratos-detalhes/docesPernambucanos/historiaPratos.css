@@ -76,7 +76,7 @@ body{
 /* Cards dos pratos  */
 .CardsPratos{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     gap: 10px;
     font-size: 14px;

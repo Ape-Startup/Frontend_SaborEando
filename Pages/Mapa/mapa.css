@@ -94,7 +94,7 @@ color: var(--cor--placeholder);
 }
 
 .searchContainer input:focus{
-    border: 1px solid #3a3b40;
+    border:#73685b 2px solid;
 }
 
  .fa-magnifying-glass{

@@ -32,20 +32,20 @@ form .input-pequeno .ativo{
     margin-bottom: 1.5em;
 }
 form #dat-nasc, #pais, #estado{
-    width: 122px;
+    width: 141px;
 }
 form #cidade{
-    width: 132px;
+    width: 141px;
 }
 form #cep{
-    width: 152px;
+    width: 141px;
 }
-form #pais{
-    margin-left: 20px;
+/* form #pais{
+    margin-left: 10px;
 }
 form #estado{
     margin-left: 20px;
-}
+} */
 
 label{
     color: #400207;
