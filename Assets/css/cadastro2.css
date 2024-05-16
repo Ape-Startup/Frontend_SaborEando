@@ -1,6 +1,13 @@
 body{
     background-image: url(../../Assets/img/bg\ cad2.svg);
+        overflow-x: hidden;
+        overflow-y: hidden;
+        max-height: 100vh;
 }
+.areaLogin .form{
+    padding-bottom: 0;
+  }
+
 form{
     display: flex;
     flex-direction: column;
@@ -17,21 +24,21 @@ form .grupo{
     justify-content: space-between;
 }
 form .input-pequeno{
-    width: 160px;
+    width: 152px;
 }
 form .input-pequeno .ativo{
-    width: 150px;
+    width: 142px;
     margin-top: .7em;
     margin-bottom: 1.5em;
 }
 form #dat-nasc, #pais, #estado{
-    width: 130px;
+    width: 122px;
 }
 form #cidade{
-    width: 140px;
+    width: 132px;
 }
 form #cep{
-    width: 160px;
+    width: 152px;
 }
 form #pais{
     margin-left: 20px;
@@ -50,11 +57,9 @@ label{
 form .primarios .ativo:hover{
     background-color: var(--cor--hover--botao);
 }
-  
+
 form .input-pequeno .ativo:hover{
-    background-color: #DFC4A2;
-    border: none;
-    box-shadow: var(--cor--placeholder) 0px 2px 5px 0px ;
+    border:rgb(115, 104, 91) 2px solid;
 }
 form .input-pequeno .ativo{
     padding-left: 1em;
@@ -63,7 +68,7 @@ form .input-pequeno .ativo{
     display: flex;
     align-items: center;
     color: #fff;
-    margin-top: 1.2em;
+    margin-top: 2em;
 }
 
 .logo-fim span{
@@ -79,4 +84,7 @@ form .input-pequeno .ativo{
     margin-top: 35px;
 }
 
-
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--cor--input) inset !important;
+    color: #fff !important;
+  }

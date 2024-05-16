@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tirando o zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--Chamando CSS-->
     <link rel="stylesheet" href="../../Assets/css/cadastro.css">
     <link rel="stylesheet" href="../../Assets/css/cadastro2.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../../Assets/components/button/botoes.css">
+    <!--Chamando Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <title>Cadastro 2</title>
 </head>
 <body>
+     <!--Container geral-->
     <section class="main">
+        <!--Container superior-->
         <div class="groupLogin">
+            <!--Logo-->
             <img src="../../Assets/img/Logo.svg" alt="logo do Sabor&Ando">
-          <a href="./cadastro.html"><i class="fa-solid fa-caret-left"></i></a> <!--Adicionar o caminho--> 
+            <!--Seta para voltar-->
+          <a href="./cadastro.html"><i class="fa-solid fa-caret-left"></i></a>
+          <!--Passos Inicio-->
           <div class="passos">
             <div class="checkContainer">                
                 <div class="checkPasso"></div>
@@ -23,32 +32,36 @@
             <span>Passo</span>
             <span>2 de 2</span>
           </div>
+          <!--Fim de Passos-->
         </div>
+        <!--Fim do container superior-->
+        <!--Inicio do container inferior-->
         <div class="areaLogin">
+            <!--Inicio do formulário-->
             <form class="form" action="" method="post">
-
-                <h1>Adorariamos saber mais sobre você!</h1>
-
+                <!--Titulo-->
+                <h1>Adoraríamos saber mais sobre você!</h1>
+                <!--Inicios dos inputs-->
                 <div class="grupo">
                     <div class="input-pequeno" >
-                        <label for="nome"> Nome </label>
-                        <input type="text" class="ativo" name="nome" placeholder="Digite seu nome" id="nome" required>
+                        <label for="nome"> Nome *</label>
+                        <input type="text" class="ativo" name="nome" placeholder="Nome" id="nome" required>
                     </div>
     
                     <div class="input-pequeno">
-                        <label for="sobrenome"> Sobrenome </label>
-                        <input type="text" class="ativo" id="sobrenome" name="sobrenome"  placeholder="Digite seus sobrenomes" required>
+                        <label for="sobrenome"> Sobrenome *</label>
+                        <input type="text" class="ativo" id="sobrenome" name="sobrenome"  placeholder="Sobrenome" required>
                     </div>  
                 </div>
                              
                 <div class="grupo">
                     <div class="input-pequeno">
                         <label for="dat-nasc"> Data de nascimento </label>
-                        <input type="date" class="ativo" id="dat-nasc" name="dat-nasc" placeholder="00/00/0000" required>
+                        <input type="text" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" class="ativo" id="dat-nasc" name="dat-nasc" placeholder="">
                     </div>  
     
                     <div class="input-pequeno">
-                        <label for="tel"> Telefone </label>
+                        <label for="tel"> Telefone *</label>
                         <input type="tel" class="ativo" id="tel"  name="tel" placeholder="(00) 00000-0000" required>
                     </div>  
                 </div>
@@ -56,14 +69,55 @@
                 <div class="grupo">
                     <div class="input-pequeno" >
                         <label for="cep"> CEP </label>
-                        <input type="text" class="ativo" id="cep" name="cep" placeholder="Digite seu CEP" required>
+                        <input type="text" class="ativo" id="cep" name="cep" placeholder="Digite seu CEP">
                     </div>  
     
                     <div class="input-pequeno" >
                         <label for="pais" id="pais"> País </label>
-                        <select id="pais" name="pais" class="ativo" required>
+                        <select id="pais" name="pais" class="ativo">
                             <option value="padrao">UF</option>
-                            <option value="brasil">Brasil</option>
+                            <optgroup label="América Latina">
+                                <option value="argentina">Argentina</option>
+                                <option value="bolivia">Bolívia</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="chile">Chile</option>
+                                <option value="colombia">Colômbia</option>
+                                <option value="equador">Equador</option>
+                                <option value="guiana">Guiana</option>
+                                <option value="paraguai">Paraguai</option>
+                                <option value="peru">Peru</option>
+                                <option value="suriname">Suriname</option>
+                                <option value="uruguai">Uruguai</option>
+                                <option value="venezuela">Venezuela</option>
+                            </optgroup>
+                            <optgroup label="Europa">
+                                <option value="alemanha">Alemanha</option>
+                                <option value="austria">Áustria</option>
+                                <option value="belgica">Bélgica</option>
+                                <option value="dinamarca">Dinamarca</option>
+                                <option value="espanha">Espanha</option>
+                                <option value="franca">França</option>
+                                <option value="italia">Itália</option>
+                                <option value="holanda">Países Baixos (Holanda)</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="reino_unido">Reino Unido</option>
+                                <option value="suecia">Suécia</option>
+                                <option value="suica">Suíça</option>
+                            </optgroup>
+                            <optgroup label="Ásia">
+                                <option value="china">China</option>
+                                <option value="india">Índia</option>
+                                <option value="indonesia">Indonésia</option>
+                                <option value="japao">Japão</option>
+                                <option value="coreia_sul">Coreia do Sul</option>
+                                <option value="malasia">Malásia</option>
+                                <option value="paquistao">Paquistão</option>
+                                <option value="filipinas">Filipinas</option>
+                                <option value="singapura">Singapura</option>
+                                <option value="taiwan">Taiwan</option>
+                                <option value="tailandia">Tailândia</option>
+                                <option value="vietna">Vietnã</option>
+                            </optgroup>
                           </select>
                     </div> 
                     
@@ -71,31 +125,33 @@
                 <div class="grupo">
                     <div class="input-pequeno" >
                         <label for="cidade"> Cidade </label>
-                        <input type="password" class="ativo" id="cidade" name="cidade" required>
+                        <input type="text" class="ativo" id="cidade" name="cidade">
                     </div>  
     
                     <div class="input-pequeno">
                         <label for="estado" id="estado"> Estado </label>
-                        <input type="text" class="ativo" id="estado" name="estado" required>
+                        <input type="text" class="ativo" id="estado" name="estado">
                     </div>  
                 </div>
             </div>
+            <!--Fim dos inputs-->
+            <!--Fim do container inferior-->
+            <!--Botão-->
                 <div class="primarios">
-                    <button type="submit" class="ativo" id="entrarButton" disabled>Próximo </button> 
+                    <a href="#"><button type="submit" class="ativo" id="entrarButton" disabled>Próximo </button> </a>
                 </div>
             </form>
+            <!--Fim do formulário-->
             
-            
-            
+            <!--Logo inferior-->
             <div class="logo-fim">
                 <img src="../../Assets/img/Logo.svg" alt="logo do Sabor&Ando">
                 <span>Sabor&Ando</span>
             </div>
 
-        
-               
     </section>
 
 </body>
+<!--Script para validar os campos-->
 <script src="./cadastro2.js"></script>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Tirando o zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Notificações</title>
+    <link rel="stylesheet" href="/Assets/components/header/header-perfil.css">
+    <link rel="stylesheet" href="/Assets/components/geral-header-nav.css">
+    <link rel="stylesheet" href="./notificacoes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--Pagina atual-->
+        <div class="container">
+            <div class="groupLogin">
+              <a href="#"><i class="fa-solid fa-caret-left"></i></a> <!--Adicionar o caminho--> 
+            </div>
+            <!--Container inferior - o que vai mudar a depender da página, por isso não recebe css-->
+            <div class="container-inferior">
+                <span>Notificações</span>
+            </div>
+            <!--Fim Container inferior-->
+        </div>
+        <!--Fim da div de Pagina atual-->
+    </header>
+    <div class="container-notificacoes">
+
+        <div class="notificacoes"> <span>Notificações</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+       <div class="email"><span>E-mail</span>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+       </div>
+       <div class="sms"><span>SMS</span>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+       </div>
+
+    </div>
+    
+
+</body>
+</html>

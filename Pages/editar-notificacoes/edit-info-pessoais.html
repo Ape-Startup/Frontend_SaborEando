@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Tirando o zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Editar informações pessoais</title>
+    <link rel="stylesheet" href="../../Assets/components/button/botoes.css">
+    <link rel="stylesheet" href="/Assets/components/header/header-perfil.css">
+    <link rel="stylesheet" href="/Assets/components/geral-header-nav.css">
+    <link rel="stylesheet" href="./edit-info-pessoais.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--Pagina atual-->
+        <div class="container">
+            <div class="groupLogin">
+              <a href="#"><i class="fa-solid fa-caret-left"></i></a> <!--Adicionar o caminho--> 
+            </div>
+            <!--Container inferior - o que vai mudar a depender da página, por isso não recebe css-->
+            <div class="container-inferior">
+                <span>Editar informações pessoais</span>
+            </div>
+            <!--Fim Container inferior-->
+        </div>
+        <!--Fim da div de Pagina atual-->
+    </header>
+    <div class="areaLogin">
+        <form class="form" action="" method="post">
+
+            <div class="grupo">
+                <div class="input-pequeno" >
+                    <label for="nome"> Nome </label>
+                    <input type="text" class="erro" name="nome" placeholder="Nome" id="nome" required>
+                </div>
+
+                <div class="input-pequeno">
+                    <label for="sobrenome"> Sobrenome </label>
+                    <input type="text" class="erro" id="sobrenome" name="sobrenome"  placeholder="Sobrenome" required>
+                </div>  
+            </div>
+                     
+        <div class="grupo">
+            
+            <div class="input-pequeno">
+                <label for="tel"> Telefone </label>
+                <input type="tel" class="erro" id="tel"  name="tel" placeholder="(00) 00000-0000" required>
+            </div>  
+
+            <div class="input-pequeno">
+                <label for="dat-nasc"> Data de nascimento </label>
+                <input type="date" class="erro" id="dat-nasc" name="dat-nasc" required>
+            </div>  
+
+        </div>
+        
+        <div class="grupo">
+            <div class="input-pequeno" >
+                <label for="cep"> CEP </label>
+                <input type="text" class="erro" id="cep" name="cep" required>
+            </div>  
+
+        </div>
+        
+        <div class="primarios">
+            <a href="#"><button type="submit" class="ativo" id="entrarButton" disabled>Salvar dados </button> </a>
+        </div>
+
+    </div>
+    </form>
+    
+</body>
+    <script src="./edit-info-pessoais.js"></script>
+</html>

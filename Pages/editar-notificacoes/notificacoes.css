@@ -1,0 +1,92 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 100vh;
+}
+.container-notificacoes{
+    display: flex;
+    margin-left: 1em;
+    font-size: 22px;
+    flex-direction: column;
+    padding-top: 2em;
+    font-weight: 600;
+    font-family: var(--fonte);
+}
+/*header*/
+.fa-caret-left{
+    position: absolute;
+    margin-left: 2px;
+    top: 34px;
+    font-size: 34px;
+    color:#F3F4F5; /*verificar*/
+    cursor: pointer;
+}
+
+.notificacoes, .email, .sms{
+    padding-top: 1.5em;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+/*Slider*/
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 57px;
+    height: 26px;
+   }
+   
+   .switch input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+   }
+   
+   .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: gray;
+    transition: .4s;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    
+   }
+   
+   .switch .slider:before {
+    
+    position: absolute;
+    content: "";
+    height:21px;
+    width: 21px;
+    border-radius: 16px;
+    left: 2px;
+    top: 1.5px;
+    bottom: 0;
+    color: #C4B1CC;
+    background-color: var(--cor--bg);
+  
+    transition: .4s;
+   }
+   
+   .switch input:checked + .slider {
+    background-color: #A60402;
+    border: 1px solid transparent;
+   }
+   
+   .switch input:checked + .slider:before {
+    transform: translateX(1.84em);
+   }
+  /*FimSlider*/
+
+  .groupLogin img{
+    width: 60px;
+  }
+
+ 
+/* seta para voltar */
+

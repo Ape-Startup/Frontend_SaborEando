@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Tirando o zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Editar informações pessoais</title>
+    <!--Chamando CSS-->
+    <link rel="stylesheet" href="../../Assets/components/button/botoes.css">
+    <link rel="stylesheet" href="/Assets/components/header/header-perfil.css">
+    <link rel="stylesheet" href="/Assets/components/geral-header-nav.css">
+    <link rel="stylesheet" href="./info-acesso.css">
+    <!--Chamando Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!--Inicio do header-->
+    <header>
+        <!--Pagina atual-->
+        <div class="container">
+            <div class="groupLogin">
+              <a href="#"><i class="fa-solid fa-caret-left"></i></a> <!--Adicionar o caminho--> 
+            </div>
+            <!--Container inferior - o que vai mudar a depender da página, por isso não recebe css-->
+            <div class="container-inferior">
+                <span>Editar informações de acesso</span>
+            </div>
+            <!--Fim Container inferior-->
+        </div>
+        <!--Fim da div de Pagina atual-->
+    </header>
+    <!--Fim do header-->
+    <!--Contianer para o formulário-->
+    <div class="areaLogin">
+        <!--Inicio do formulário-->
+        <form class="form" action="" method="post">
+            <!--Container para os inputs-->
+            <div class="grupo">
+                <!--Input para email-->
+                <div class="input-pequeno" >
+                    <label for="email"> E-mail </label>
+                    <input type="email" class="erro" name="email" placeholder="E-mail" id="email" required>
+                </div>
+                <!--Fim do input para email-->
+                <!--Input para senha-->
+                <div class="input-pequeno">
+                    <label for="senha"> Senha </label>
+                    <input type="password" class="erro" id="senha" name="sobrenome"  placeholder="Senha" required>
+                </div> 
+                <!--Fim do input para senha--> 
+            </div>
+            <!--Fim do container para os inputs-->
+        
+        <div class="primarios">
+            <a href="#"><button type="submit" class="ativo" id="entrarButton" disabled>Salvar dados </button> </a>
+        </div>
+
+    </div>
+    <!--Fim do containr para o formulário-->
+        </form>
+    <!--Fim do formulário-->
+</body>
+    <!--Script para deixar o botão inativo e ativo-->
+    <script src="./info-acesso.js"></script>
+</html>

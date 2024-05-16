@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const senhaValida = validarSenha(senha);
         const senhasIguais = senha === confirmSenha;
 
-        if (emailValido && emailsIguais && senhaValida && senhasIguais && checkboxChecked) {
+        if (emailValido && emailsIguais && senhaValida && senhasIguais && checkboxChecked && temMaiuscula && temMinuscula) {
             entrarButton.classList.remove('desativado');
             entrarButton.classList.add('ativo');
             entrarButton.removeAttribute('disabled');
@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
             entrarButton.setAttribute('disabled', 'disabled');
         }
     }
+    var temMaiuscula = /[A-Z]/.test(senha);
+    
+    // Expressão regular para verificar se há pelo menos uma letra minúscula
+    var temMinuscula = /[a-z]/.test(senha);
 
     function validarEmail(email) {
         return email !== '';

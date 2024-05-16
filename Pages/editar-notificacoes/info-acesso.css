@@ -1,0 +1,78 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 100vh;
+}
+.container-notificacoes{
+    display: flex;
+    margin-left: 1em;
+    font-size: 22px;
+    flex-direction: column;
+    padding-top: 2em;
+    font-weight: 600;
+    font-family: var(--fonte);
+}
+/*header*/
+.fa-caret-left{
+    position: absolute;
+    margin-left: 2px;
+    top: 34px;
+    font-size: 34px;
+    color:#F3F4F5; /*verificar*/
+    cursor: pointer;
+}
+
+
+.areaLogin{
+    margin: 2em 1.3em 0 1.3em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form .grupo{
+    display: flex;
+    flex-direction: column;
+}
+form .input-pequeno{
+    width: 160px;
+}
+form .input-pequeno .erro{
+    width: 145px;
+    margin-top: .7em;
+    margin-bottom: 1.5em;
+}
+
+form #email, #senha{
+    width: 85vw;
+}
+
+
+label{
+ color: var(--cor-preto);
+ font-family: "Urbanist", sans-serif;
+ font-weight: 600;
+ margin-left: 5px;
+}
+
+form .primarios .erro:hover{
+    background-color: var(--cor--hover--botao);
+}
+  
+form .input-pequeno .erro:hover{
+    background-color: #DFC4A2;
+    box-shadow: var(--cor--placeholder) 0px 2px 5px 0px ;
+}
+form .input-pequeno .erro{
+    padding-left: 1em;
+}
+
+.primarios{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
