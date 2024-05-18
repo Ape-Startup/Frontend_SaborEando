@@ -24,28 +24,15 @@ form .grupo{
     justify-content: space-between;
 }
 form .input-pequeno{
-    width: 152px;
+    width: 40vw;
+    font-size: 0.9em;
 }
 form .input-pequeno .ativo{
-    width: 142px;
+    width: 37vw;
     margin-top: .7em;
     margin-bottom: 1.5em;
 }
-form #dat-nasc, #pais, #estado{
-    width: 141px;
-}
-form #cidade{
-    width: 141px;
-}
-form #cep{
-    width: 141px;
-}
-/* form #pais{
-    margin-left: 10px;
-}
-form #estado{
-    margin-left: 20px;
-} */
+
 
 label{
     color: #400207;
@@ -87,4 +74,22 @@ form .input-pequeno .ativo{
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px var(--cor--input) inset !important;
     color: #fff !important;
+}
+
+@media screen and (max-height: 700px) {
+    h1{
+        padding-bottom: 0;
+        height: 9vh;
+        font-size: 1em;
+        width: 70vw;
+    }
+    form .input-pequeno{
+        font-size: 0.6em;
+    }
+    form .input-pequeno .ativo{
+        font-size: 0.9em;
+        width: 30vw;
+        margin-top: .7em;
+        margin-bottom: 1.5em;
+    }
   }

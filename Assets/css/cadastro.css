@@ -89,13 +89,13 @@ body{
 
 .areaLogin .form{
 background-color: #D9B88F; /*verificar*/
-padding: 35px 21px 2.74em 21px;
+padding: 3vh 21px 3vh 21px;
 border-radius: 30px;
 }
 
 .input-grande .ativo{
-  margin-bottom: 1.5em;
-  margin-top: .7em;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 .input-grande label{
@@ -108,7 +108,7 @@ margin-left: 5px;
 #icon{
   position: absolute;
   transform: translateY(110%);
-  margin-left: 270px;
+  margin-left: 65vw;
   width: 0;
   color: var(--cor--placeholder);
 }
@@ -350,4 +350,11 @@ border:rgb(115, 104, 91) 2px solid;
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px var(--cor--input) inset !important;
   color: #fff !important;
+}
+
+@media screen and (max-height: 700px) {
+  .input-grande .ativo{
+    margin-bottom: 1vh;
+    margin-top: 0.5vh;
+  }
 }

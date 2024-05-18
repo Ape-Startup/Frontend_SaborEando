@@ -43,7 +43,7 @@
 .primarios .focus,
 .primarios .desativado-icone,
 .primarios .desativado{
-    width: 325px;
+    width: 78vw;
     height: 55px;
     align-items: center;
     justify-content: center;
@@ -100,7 +100,7 @@
 .secundarios .focus,
 .secundarios .desativado-icone,
 .secundarios .desativado {
-    width: 325px;
+    width: 78vw;
     height: 55px;
     align-items: center;
     justify-content: center;
@@ -221,7 +221,7 @@
 .link .focus,
 .link .desativado-icone,
 .link .desativado {
-    width: 325px;
+    width: 80vw;
     height: 55px;
     align-items: center;
     justify-content: center;
@@ -368,7 +368,7 @@
 .input-grande .selecionado,
 .input-grande .sucesso,
 .input-grande .erro {
-    width: 307px;
+    width: 78vw;
     height: 45px;
     align-items: center;
     justify-content: center;
@@ -514,3 +514,14 @@
 
 
 /*width: 78vw; tamanho responsivo e para fold 70vw*/
+
+
+@media screen and (max-width: 310px) {
+    .input-grande .ativo,
+    .input-grande .hover,
+    .input-grande .selecionado,
+    .input-grande .sucesso,
+    .input-grande .erro {
+        width: 68vw;
+}
+}
