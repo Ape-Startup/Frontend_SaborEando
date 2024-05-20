@@ -109,17 +109,12 @@ header{
     margin-top: -150px;
     
 }
- .container-inferior{
-    display: flex;
-    align-items: center;
-    font-size: 2em;
-    margin-top: 0.3em;
-    font-weight: bolder;
-    border: none;
-    background-color: var(--cor--input);
-    border-radius: 16px;
-    padding: 0.01em;
-      width: 100%;
+ 
+
+header .container-esquerdo span{
+    font-family: var(--fonte--logo);
+    font-weight: bold;
+    margin-left: .5em;
 }
 
 
@@ -133,9 +128,23 @@ header .container-superior{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: .3em;
+    margin-top: 1em;
     color: var(--cor--input);
     font-family: var(--fonte);
+}
+
+header .container-inferior{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte);
+    color: var(--cor--branco);
+    font-size: 1.5em;
+    padding-bottom: 18px;
+}
+
+header .container-inferior span{
+  margin-top: 28px;
 }
 
 header .container-esquerdo{
@@ -155,38 +164,7 @@ header .container-esquerdo img{
 }
 
 
-textarea{
-    border-radius: 16px 0 0 16px;
-    height: 1em;
-    padding: .9em .2em 1.3em 1em;
-    width: 100%;
-    resize: none;
-    overflow: hidden;
-    background-color: var(--cor--);
-    border: none;
-    color: var(--cor--placeholder);
-    outline: none;
-}
 
-
- textarea::placeholder{
-    color: var(--cor--placeholder);
-    font-family: urbanist; 
-    font-size: 16px;
-}
-
- .pesquisa{
-    font-family: inherit;
-    background-color: var(--cor--input);
-    color: var(--cor--placeholder);
-    padding: 0.63em .2em;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 0 16px 16px 0;
-    overflow: hidden;
-    width: 10%;
-}
 
 /*Fim da Header*/
 
@@ -360,7 +338,7 @@ h2{
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 10px;
-    background-image: url(/Assets/img/card\ provisorio\ 350x175.svg);
+    background-image: url(/assets/img/card\ provisorio\ 350x175.svg);
 }
 
 /*recentes*/
@@ -380,12 +358,11 @@ h2{
     height: 100px;
     border-radius: 18px;
     background-color: lightgray;
-    background-image: url(/Assets/img/card-provisorio180x100.svg);
-    margin-right: 16px;
+    background-image: url(/assets/img/card-provisorio180x100.svg);
+    margin-right: 10px;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 10px;
-    
 }
 
 /*cidade*/
@@ -408,7 +385,7 @@ h2{
     height: 145px;
     border-radius: 12px;
     background-color: lightgray;
-    background-image: url(/Assets/img/card-provisorio120x145.svg);
+    background-image: url(/assets/img/card-provisorio120x145.svg);
     margin-right: 10px;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
