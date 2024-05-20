@@ -314,17 +314,19 @@ header{
     z-index: 999;
 }
 
- .container-inferior{
+header .container-inferior{
+    justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 2em;
-    margin-top: 0.3em;
-    font-weight: bolder;
-    border: none;
-    background-color: var(--cor--input);
-    border-radius: 16px;
-    padding: 0.01em;
-    width: 100%;
+    font-family: var(--fonte);
+    color: var(--cor--branco);
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+
+header .container-inferior span{
+  margin-top: 28px;
 }
 
 
