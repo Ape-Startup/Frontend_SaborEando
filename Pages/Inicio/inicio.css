@@ -19,6 +19,14 @@
 --fonte--logo:"Playfair Display", serif;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
 body{
     background-size: cover;
     background-color: var(--cor--primaria);
@@ -27,7 +35,7 @@ body{
   }
 
 .main{
-    padding: 0px 21px;
+    padding: 0px 32px;
 }
 
 
@@ -40,6 +48,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 115px;
+    margin-bottom: 33px;
  }
 
 
@@ -56,6 +65,60 @@ body{
     font-size: 30px;
   }
 
+/* carrosel de frases */
+
+.frase {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    display: none;
+    font-size: 18px;
+    font-family: var(--fonte);
+    }
+
+.frase.active {
+    display: block;
+}
+
+.frame-item.active {
+    background-color: #400207;
+}
+
+.frame-item {
+    width: 4px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #f2e6d8;
+    height: 4px;
+    cursor: pointer;
+    }
+
+.ellipse-parent {
+    position: absolute;
+    height: 6.15%;
+    width: 18.78%;
+    top: 93.85%;
+    right: 40.85%;
+    bottom: 0%;
+    left: 40.38%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    }
+.carrosel {
+    width: 100%;
+    position: relative;
+    height: 65px;
+    text-align: center;
+    font-size: 18px;
+    color: #f2e6d8;
+    font-family: Urbanist;
+    overflow: hidden;
+    }
+
 
 /* botoes cadastro */
 .secundarios{
@@ -63,8 +126,8 @@ body{
 }
 
 .secundarios .ativo {
-    width: 325px;
-    height: 55px;
+    width: 100%;
+    height: 50px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -73,6 +136,7 @@ body{
     color: var(--cor--primaria);
     font-weight: 500;
     margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .secundarios a{
@@ -118,7 +182,7 @@ body{
     border: 1px solid #F3F4F5; /*verificar*/ 
     background-color: transparent;
     color: #F3F4F5; /*verificar*/
-    padding: 15px;
+    padding: 15px 35px;
     font-family: "Urbanist", sans-serif;
     font-size: 16px;
     width: 100%;
@@ -143,14 +207,14 @@ body{
     font-size: 21px; /*verificar - figma  */
   }
   
-  .InicioExtra{
+  .btnInicioDiv{
     margin-top: 51px;
     display: flex;
     align-items: center;
     justify-content: center;
    }
   
-   .InicioExtra p {
+   .btnInicioDiv p {
     font-size: 16px;
     margin-bottom: 12px;
     font-family: "Urbanist", sans-serif;
