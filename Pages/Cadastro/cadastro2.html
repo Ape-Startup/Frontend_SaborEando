@@ -14,7 +14,11 @@
     
     <title>Cadastro 2</title>
 </head>
+
 <body>
+ 
+
+
      <!--Container geral-->
     <section class="main">
         <!--Container superior-->
@@ -37,6 +41,8 @@
         <!--Fim do container superior-->
         <!--Inicio do container inferior-->
         <div class="areaLogin">
+            
+            
             <!--Inicio do formulário-->
             <form class="form" action="" method="post">
                 <!--Titulo-->
@@ -57,7 +63,7 @@
                 <div class="grupo">
                     <div class="input-pequeno">
                         <label for="dat-nasc"> Data de nascimento </label>
-                        <input type="text" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" class="ativo" id="dat-nasc" name="dat-nasc" placeholder="">
+                        <input type="date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" class="ativo" id="dat-nasc" name="dat-nasc" placeholder="">
                     </div>  
     
                     <div class="input-pequeno">
@@ -125,12 +131,12 @@
                 <div class="grupo">
                     <div class="input-pequeno" >
                         <label for="cidade"> Cidade </label>
-                        <input type="text" class="ativo" id="cidade" name="cidade">
+                        <input type="text" class="ativo" id="cidade" placeholder="Digite sua cidade" name="cidade">
                     </div>  
     
                     <div class="input-pequeno">
-                        <label for="estado" id="estado"> Estado </label>
-                        <input type="text" class="ativo" id="estado" name="estado">
+                        <label for="uf" id="estado"> Estado </label>
+                        <input type="text" class="ativo" id="uf" placeholder="Digite seu Estado" name="estado">
                     </div>  
                 </div>
             </div>
@@ -148,10 +154,11 @@
                 <img src="../../Assets/img/logo.svg" alt="logo do Sabor&Ando">
                 <span>Sabor&Ando</span>
             </div>
-
+            
     </section>
 
 </body>
 <!--Script para validar os campos-->
 <script src="./cadastro2.js"></script>
+<script src="./validacaoCEP.js"></script>
 </html>
