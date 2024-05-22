@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+--cor--primaria: #A60402;
+--cor--secundaria: #DFC4A2;
+--cor--input:#F0E4D4;
+--cor--placeholder:#A9A197;
+--cor--bg:#F7F1E8;
+--cor--hover--botao: #970402;
+--cor--press--botao: #760301;
+--cor--confirmacao: #008124;
+--cor--erro: #8c2e0e;
+--cor--info: #0077a9;
+--cor--aviso: ##e8d000;
+--cor-preto:black;
+--cor--branco:white;
+--fonte:"Urbanist", sans-serif;
+--fonte--logo:"Playfair Display", serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    top:0;
+    padding: 0;
+    right: 0 ;
+    line-height: normal;
+    width: 100%;
+    position: relative;
+    background-color: var(--cor--bg);
+    overflow-y: auto;
+    text-align: left;
+    font-size: 16px;
+    color: #270104;
+    font-family: Urbanist;
+    overflow-x: hidden;
+    }
+
+
+
+.rectangle-div {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(166, 166, 166, 0.01);
+    border-radius: 0 0 25px 25px;
+    background-color:var(--cor--primaria);
+    height: 126px;
+    }
+
+.fa-caret-left {
+    display:inline-block ;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    cursor: pointer;
+    color: white;
+    margin-top: 44px;
+    margin-left:15px;
+    font-size: 34px;
+    }
+
+.titulo-config {
+    position: relative;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Urbanist;
+    color: #f7f1e8;
+    display: inline-block;
+    top: 24%;
+    left: 26%;
+    }
+
+.info{
+    margin-top:41px;
+    margin-left: 16px;
+    color: #A9A197;
+}
+
+
+/**area de inputs*/
+
+
+
+.areadados{
+    margin: 2em 1.3em 0 1.3em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form .grupo{
+    display: flex;
+    flex-direction: column;
+}
+form .input-pequeno{
+    width: 160px;
+}
+form .input-pequeno .erro{
+    width: 145px;
+    margin-top: .7em;
+    margin-bottom: 1.5em;
+}
+
+form #email, #name, #bug{
+    width: 85vw;
+}
+
+#bug{
+   margin-bottom: 12px;
+}
+
+
+label{
+ color: var(--cor-preto);
+ font-family: "Urbanist", sans-serif;
+ font-weight: 600;
+ margin-left: 5px;
+}
+
+form .primarios .erro:hover{
+    background-color: var(--cor--hover--botao);
+}
+  
+form .input-pequeno .erro:hover{
+    background-color: #DFC4A2;
+    box-shadow: var(--cor--placeholder) 0px 2px 5px 0px ;
+}
+form .input-pequeno .erro{
+    padding-left: 1em;
+}
+
+.primarios{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+
+
+/*textarea*/
+.mensagem{
+    flex-direction: column;
+}
+
+.mensagem label, .mensagem textarea {
+    display: block;
+    width: 85vw;
+}
+
+textarea{
+    margin-top: 12px;
+    height: 100px;
+}
+
+/*botão*/
+
