@@ -9,7 +9,7 @@ self.addEventListener('install', event => {
     .then(cache => cache.addAll([
 
 
-      './Pages/Inicio/inicio.html',
+      './index.html',
 
       './Pages/Inicio/inicio.css',
 

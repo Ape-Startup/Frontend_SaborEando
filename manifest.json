@@ -72,7 +72,7 @@
             "label": "Wonder Widgets"
         }
     ],
-    "start_url": "./Pages/Inicio/inicio.html",  
+    "start_url": "./index.html",  
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#A60402",
