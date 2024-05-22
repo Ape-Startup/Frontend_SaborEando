@@ -19,6 +19,8 @@ self.addEventListener('install', event => {
       
       'https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap',
 
+      './Assets/img/logo.svg',
+
       './Pages/Inicio/inicio.js',
 
       './Assets/icons/icon_29.png', 
@@ -41,9 +43,7 @@ self.addEventListener('install', event => {
 
       './Assets/icons/icon_512.png',
 
-      './Assets/icons/icon_1024.png',
-      
-      './Assets/img/Logo.svg', 
+      './Assets/icons/icon_1024.png', 
 
     ]))
   );
