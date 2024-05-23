@@ -28,7 +28,7 @@ const pesquisarCep = async () => {
 
  
     if (!cepValido(cep)) { // Verifica se o CEP é válido.
-        cepInput.classList.add('input-error'); // Adiciona a classe de erro se o CEP for inválido.
+        cepInput.classList.add('input-error'); // Adiciona a classe de erro se o CEP for inválido mudando as cores da borda e dos números/ definições prévias no css .
         return; // Sai da função.
     }
 
@@ -46,7 +46,7 @@ const pesquisarCep = async () => {
         } else {
             preencherFormulario(endereco); // Preenche o formulário com os dados do endereço.
         }
-        cepInput.classList.remove('input-error'); // Remove a classe de erro do input de CEP.
+        cepInput.classList.remove('input-error'); // Remove a classe de erro do input de CEP quando preencher corretamente.
     
     } catch (error) {
         console.error(error); // Loga o erro no console.
