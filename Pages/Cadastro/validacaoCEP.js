@@ -26,11 +26,7 @@ const pesquisarCep = async () => {
     let cep = cepInput.value; // Obtém o valor do CEP.
     cep = formatarCep(cep); // Formata o CEP para remover caracteres não numéricos.
 
-    if (cep.length !== 8) { // Verifica se o CEP tem exatamente 8 dígitos.
-        cepInput.classList.add('input-error'); // Adiciona a classe de erro se o CEP não tiver 8 dígitos.
-        return; // Sai da função.
-    }
-
+ 
     if (!cepValido(cep)) { // Verifica se o CEP é válido.
         cepInput.classList.add('input-error'); // Adiciona a classe de erro se o CEP for inválido.
         return; // Sai da função.
@@ -39,10 +35,11 @@ const pesquisarCep = async () => {
     const url = `https://viacep.com.br/ws/${cep}/json/`; // URL para buscar o CEP na API ViaCEP.
 
     try {
-        const response = await fetch(url); // Faz a requisição para a API ViaCEP.
+        const response = await fetch(url); // Faz a requisição para a API ViaCEP. / await não é diretamente aplicado a uma constante e sim a chamadas assíncronas que retornam promises. / função await espera que essas operações assíncronas sejam concluídas antes de continuar com o código síncrono subsequente.
         if (!response.ok) { // Verifica se a resposta não é OK.
             throw new Error('Erro ao buscar CEP'); // Lança um erro se a resposta não for OK.
         }
+
         const endereco = await response.json(); // Converte a resposta para JSON.
         if (endereco.hasOwnProperty('erro')) { // Verifica se o JSON retornou um erro.
             throw new Error('CEP não encontrado'); // Lança um erro se o CEP não for encontrado.
@@ -50,6 +47,7 @@ const pesquisarCep = async () => {
             preencherFormulario(endereco); // Preenche o formulário com os dados do endereço.
         }
         cepInput.classList.remove('input-error'); // Remove a classe de erro do input de CEP.
+    
     } catch (error) {
         console.error(error); // Loga o erro no console.
         alert('Ocorreu um erro ao buscar o CEP. Por favor, tente novamente mais tarde.'); // Exibe um alerta com o erro.
@@ -59,3 +57,5 @@ const pesquisarCep = async () => {
 
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
 // Adiciona um event listener ao campo de CEP para disparar a função de pesquisa quando o campo perde o foco.
+
+
