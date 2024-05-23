@@ -14,3 +14,9 @@ function validarFormulario() {
         entrarButton.setAttribute('disabled', 'disabled');
     }
 }
+
+function redirecionar() {
+    if (entrarButton.classList.contains('active')) {
+        window.location.href = "../../Pages/Home/home.html"; // Replace 'outra_pagina.html' with the URL of the page you want to redirect to
+    }
+} 

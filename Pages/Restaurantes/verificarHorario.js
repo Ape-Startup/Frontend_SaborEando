@@ -1,7 +1,7 @@
 // Horários de funcionamento dos restaurantes (no formato 24 horas)
 const horarios = {
     restaurante1: { abre: 10, fecha: 20 }, // Restaurante 1 abre às 10h e fecha às 20h
-    restaurante2: { abre: 9, fecha: 21 }   // Restaurante 2 abre às 9h e fecha às 21h
+    restaurante2: { abre: 9, fecha: 17 }   // Restaurante 2 abre às 9h e fecha às 21h
     // Adicione mais restaurantes conforme necessário
 };
 
