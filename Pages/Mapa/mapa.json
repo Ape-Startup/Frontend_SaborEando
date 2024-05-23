@@ -260,7 +260,32 @@
         "telefone":"+55 81 3877-3412",
         "latitude":-8.14272, 
         "longitude": -34.90967 
+    },
+
+
+
+    
+    {
+        "id": 26,
+        "img":"../../Assets/img/cafeSaoBraz.svg",
+        "nome": " teste",
+        "endereco":"",
+        "telefone":"",
+        "latitude":-8.11454, 
+        "longitude": -34.89604  
+    },
+
+
+
+    {
+        "id": 27,
+        "img":"../../Assets/img/cafeSaoBraz.svg",
+        "nome": " testezin",
+        "endereco":"",
+        "telefone":"",
+        "latitude":-8.06679, 
+        "longitude": -35.02986
+
     }
-
-
+ 
     ]

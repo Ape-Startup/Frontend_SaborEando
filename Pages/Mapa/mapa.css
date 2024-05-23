@@ -113,3 +113,40 @@ color: var(--cor--placeholder);
  width: 200px;
  border-radius: 20px;
 }
+
+/* filtro de busca */
+
+.filter{
+  position: absolute; 
+  z-index: 99999;
+  background-color: var(--cor--input); 
+  top: 70px;
+  left: 25px;
+}
+
+.filter div{
+  margin: 10px 5px 10px;
+}
+
+.filtroContent {
+  appearance: none; /* Remove a aparência padrão do checkbox */
+  -webkit-appearance: none; /* Para compatibilidade com alguns navegadores */
+  -moz-appearance: none; /* Para compatibilidade com alguns navegadores */
+  width: 20px; /* Defina o tamanho desejado */
+  height: 20px; /* Defina o tamanho desejado */
+  border: 2px solid var(--cor--press--botao); /* Cor da borda do checkbox */
+  border-radius: 5px; /* Forma do checkbox */
+  outline: none; /* Remove a borda quando selecionado */
+  cursor: pointer; /* Muda o cursor ao passar sobre o checkbox */
+  
+}
+
+.filter div label{
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+}
+
+ /* Estilo para o checkbox quando marcado */
+ .filtroContent:checked {
+  background-color: var(--cor--press--botao) ; /* Cor de fundo quando selecionado */
+}
