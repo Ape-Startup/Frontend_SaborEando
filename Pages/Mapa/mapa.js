@@ -40,7 +40,7 @@ function success(position) {
 
     const markerPopupContent = `
     <div class="popup-content">
-        <h4>Sua Localização atual</h4>
+        <h4>Você está aqui</h4>
     </div>`;
 
     if (userMarker) {
@@ -76,19 +76,11 @@ document.getElementById("searchInput").addEventListener("input", function() {
 });
 
 document.getElementById("filtroDoces").addEventListener("click", function() {
-    if (this.checked) {
-        filterMarkers("doces");
-    } else {
-        initializeMap();
-    }
+    filterMarkers();
 });
 
 document.getElementById("filtroFrutosDoMar").addEventListener("click", function() {
-    if (this.checked) {
-        filterMarkers("frutosDoMar");
-    } else {
-        initializeMap();
-    }
+    filterMarkers();
 });
 
 function search() {
@@ -122,7 +114,10 @@ function search() {
     }
 }
 
-function filterMarkers(filterType) {
+function filterMarkers() {
+    var filtroDoces = document.getElementById("filtroDoces").checked;
+    var filtroFrutosDoMar = document.getElementById("filtroFrutosDoMar").checked;
+
     map.eachLayer(function (layer) {
         if (layer instanceof L.Marker && layer !== userMarker) {
             map.removeLayer(layer);
@@ -132,13 +127,19 @@ function filterMarkers(filterType) {
     fetch('./mapa.json')
         .then(response => response.json())
         .then(data => {
-            data.forEach(function (restaurante) {
-                if (filterType === "doces" && restaurante.id < 26) {
+            if (!filtroDoces && !filtroFrutosDoMar) {
+                data.forEach(function (restaurante) {
                     addMarker(restaurante);
-                } else if (filterType === "frutosDoMar" && restaurante.id >= 26) {
-                    addMarker(restaurante);
-                }
-            });
+                });
+            } else {
+                data.forEach(function (restaurante) {
+                    if (filtroDoces && restaurante.id < 26) {
+                        addMarker(restaurante);
+                    } else if (filtroFrutosDoMar && restaurante.id >= 26) {
+                        addMarker(restaurante);
+                    }
+                });
+            }
         })
         .catch(error => console.error('Erro ao carregar as localizações:', error));
 }

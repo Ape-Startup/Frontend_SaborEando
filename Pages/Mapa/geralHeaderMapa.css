@@ -96,14 +96,14 @@ header{
     width: 100%;
     height: 126px;
     display: flex;
-    justify-content: center;
-   
+    justify-content: center;   
 }
 
 
 header .container {
     width: 90%;
     flex-direction: column;
+    border-radius: 899px;
 }
 
 header .container-superior{
@@ -111,14 +111,24 @@ header .container-superior{
     align-items: center;
     justify-content: space-between;
     margin-top: .3em;
-    color: var(--cor--input);
+    color: var(--cor--bg);
     font-family: var(--fonte);
-    margin-top: 40px;
+     
+    
 }
 
 header .container-esquerdo{
     display: flex;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+
+header .container-direito{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
 }
 
 header .container-esquerdo img{
@@ -130,7 +140,6 @@ header .container-esquerdo span{
     font-weight: bold;
     margin-left: .5em;
 }
-
 /*Fim da Header*/
 /*Fim de Configurações gerais*/
 
@@ -152,6 +161,9 @@ nav .mapMap{
 }
 /*Fim da navegação*/
 
+
+/*Fim da navegação*/
+
 header{
     border-radius: 0;
 }
@@ -162,4 +174,6 @@ header .container-inferior{
     font-family: var(--fonte);
     color: var(--cor--branco);
     font-size: 1.5em;
+    padding-bottom: 18px;
+    font-weight: 500;
 }

@@ -48,7 +48,6 @@ body{
     margin: -15px auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
 
   
   }
@@ -140,6 +139,8 @@ color: var(--cor--placeholder);
   cursor: pointer; /* Muda o cursor ao passar sobre o checkbox */
   
 }
+
+
 
 .filter div label{
   font-family: "Urbanist", sans-serif;
