@@ -76,6 +76,13 @@ input:-webkit-autofill {
     color: #fff !important;
 }
 
+.input-error {
+    color:var(--cor--primaria) !important;
+    font-weight: 600 !important;
+    border:2px solid var(--cor--erro) !important;
+
+}
+
 @media screen and (max-height: 700px) {
     h1{
         padding-bottom: 0;

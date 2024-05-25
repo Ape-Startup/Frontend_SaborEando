@@ -3,6 +3,42 @@ body{
     overflow-y: hidden;
     max-height: 100vh;
 }
+
+/* Header */
+.rectangle-div {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(166, 166, 166, 0.01);
+    border-radius: 0 0 25px 25px;
+    background-color:var(--cor--primaria);
+    height: 126px;
+    }
+
+.fa-caret-left {
+    display:inline-block ;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    cursor: pointer;
+    color: white;
+    margin-top: 44px;
+    margin-left:15px;
+    font-size: 34px;
+    }
+
+.titulo-config {
+    position: relative;
+    font-size: 22px;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Urbanist;
+    color: #f7f1e8;
+    display: inline-block;
+    top: 24%;
+    left: 6%;
+    }
+
 .container-notificacoes{
     display: flex;
     margin-left: 1em;
@@ -12,16 +48,6 @@ body{
     font-weight: 600;
     font-family: var(--fonte);
 }
-/*header*/
-.fa-caret-left{
-    position: absolute;
-    margin-left: 2px;
-    top: 34px;
-    font-size: 34px;
-    color:#F3F4F5; /*verificar*/
-    cursor: pointer;
-}
-
 
 .areaLogin{
     margin: 2em 1.3em 0 1.3em;

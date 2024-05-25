@@ -14,13 +14,17 @@
     
     <title>Cadastro 2</title>
 </head>
+
 <body>
+ 
+
+
      <!--Container geral-->
     <section class="main">
         <!--Container superior-->
         <div class="groupLogin">
             <!--Logo-->
-            <img src="../../Assets/img/Logo.svg" alt="logo do Sabor&Ando">
+            <img src="../../Assets/img/logo.svg" alt="logo do Sabor&Ando">
             <!--Seta para voltar-->
           <a href="./cadastro.html"><i class="fa-solid fa-caret-left"></i></a>
           <!--Passos Inicio-->
@@ -37,6 +41,8 @@
         <!--Fim do container superior-->
         <!--Inicio do container inferior-->
         <div class="areaLogin">
+            
+            
             <!--Inicio do formulário-->
             <form class="form" action="" method="post">
                 <!--Titulo-->
@@ -57,7 +63,7 @@
                 <div class="grupo">
                     <div class="input-pequeno">
                         <label for="dat-nasc"> Data de nascimento </label>
-                        <input type="text" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" class="ativo" id="dat-nasc" name="dat-nasc" placeholder="">
+                        <input type="date" class="ativo" id="dat-nasc" name="dat-nasc" placeholder="">
                     </div>  
     
                     <div class="input-pequeno">
@@ -125,33 +131,36 @@
                 <div class="grupo">
                     <div class="input-pequeno" >
                         <label for="cidade"> Cidade </label>
-                        <input type="text" class="ativo" id="cidade" name="cidade">
+                        <input type="text" class="ativo" id="cidade" placeholder="Digite sua cidade" name="cidade">
                     </div>  
     
                     <div class="input-pequeno">
-                        <label for="estado" id="estado"> Estado </label>
-                        <input type="text" class="ativo" id="estado" name="estado">
+                        <label for="uf" id="estado"> Estado </label>
+                        <input type="text" class="ativo" id="uf" placeholder="Digite seu Estado" name="estado">
                     </div>  
                 </div>
             </div>
             <!--Fim dos inputs-->
             <!--Fim do container inferior-->
             <!--Botão-->
-                <div class="primarios">
-                    <a href="#"><button type="submit" class="desativado" id="entrarButton" disabled>Próximo </button> </a>
-                </div>
+                
             </form>
+
+                <div class="primarios">
+                    <a href="../../Pages/Login/login.html"><button onclick= "passarPagina()" type="submit" class="desativado" id="entrarButton" disabled>Próximo </button> </a>
+                </div>
             <!--Fim do formulário-->
             
             <!--Logo inferior-->
             <div class="logo-fim">
-                <img src="../../Assets/img/Logo.svg" alt="logo do Sabor&Ando">
+                <img src="../../Assets/img/logo.svg" alt="logo do Sabor&Ando">
                 <span>Sabor&Ando</span>
             </div>
-
+            
     </section>
 
 </body>
 <!--Script para validar os campos-->
 <script src="./cadastro2.js"></script>
+<script src="./validacaoCEP.js"></script>
 </html>

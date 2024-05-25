@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#A60402"/>
+    <meta name="description" content="App de turismo gastronômico">
+    <link rel="stylesheet" href="/Assets/css/ticketereport.css">
+    <link rel="stylesheet" href="../../Assets/components/button/botoes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" />
+    <title>Report</title>
+</head>
+<body>
+    <header>
+
+        <div class="rectangle-div">
+            <a href="../../Pages/Configuracao/ajuda-suporte.html">
+            <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <div class="titulo-config">Reportar bug</div>
+        </div>
+    </header>
+
+    <p class="info">Encontrou algum erro ou bug? ajude a gente melhorar sua experiência no nosso aplicativo!</p>
+
+    <div class="areadados">
+        <!--Inicio do formulário-->
+        <form class="form" action="" method="post">
+            <!--Container para os inputs-->
+            <div class="grupo">
+                <!--Input para nome-->
+                <div class="input-pequeno">
+                    <label for="name">Nome</label>
+                    <input type="name" class="erro" name="nome" placeholder="Digite seu nome" id="name" required>
+                </div>
+                <!--Fim do input para nome-->
+                <!--Input para email-->
+                <div class="input-pequeno">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="erro" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <!--Fim do input para email-->
+
+                <!--Dropdown para tipo de bug-->
+                <div class="input-pequeno">
+                    <label for="bug">Tipo de bug</label>
+                    <select id="bug" name="bug" required>
+                        <option value="" disabled selected>Selecione um tipo de bug</option>
+                        <option value="login">Problemas de login</option>
+                        <option value="performance">Problemas de performance</option>
+                        <option value="interface">Problemas na interface</option>
+                        <option value="crash">App travando</option>
+                        <option value="outros">Outros bugs</option>
+                    </select>
+                </div>
+                <!--Fim do dropdown para tipo de bug-->
+            </div>
+            <!--Fim do container para os inputs-->
+
+
+            <div class="mensagem">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Envie uma mensagem"></textarea>
+            </div>
+
+            <div class="primarios">
+                <a href="#"><button type="submit" class="ativo">Salvar dados </button> </a>
+            </div>
+
+</body>
+</html>

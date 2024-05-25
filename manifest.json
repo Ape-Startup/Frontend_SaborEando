@@ -1,0 +1,80 @@
+{
+    "name": "Sabor&ando",
+    "short_name": "Sabor&ando",
+    "icons": [
+        {
+            "src": "./Assets/icons/icon_512.png", 
+            "sizes": "512x512", 
+            "type": "image/png", 
+            "purpose": "maskable"
+        },
+        {
+            "src": "./Assets/icons/icon_1024.png", 
+            "sizes": "1024x1024", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_180.png", 
+            "sizes": "180x180", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_120.png", 
+            "sizes": "120x120", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_114.png", 
+            "sizes": "114x114", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_87.png", 
+            "sizes": "87x87", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_80.png", 
+            "sizes": "80x80", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_60.png", 
+            "sizes": "60x60", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_58.png", 
+            "sizes": "58x58", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_57.png", 
+            "sizes": "57x57", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_40.png", 
+            "sizes": "40x40", 
+            "type": "image/png" 
+        },
+        {
+            "src": "./Assets/icons/icon_29.png", 
+            "sizes": "29x29", 
+            "type": "image/png" 
+        }
+    ],
+    "screenshots":[
+        {
+            "src":"./Assets/icons/icon_1024.png",
+            "sizes": "1024x1024",
+            "type": "image/gif",
+            "label": "Wonder Widgets"
+        }
+    ],
+    "start_url": "../../index.html",  
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#A60402",
+    "theme_color": "#A60402" 
+ }

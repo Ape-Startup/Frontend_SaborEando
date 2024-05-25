@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: var(--cor--bg);
+    font-family: "Urbanist", sans-serif;
+    background-color: var(--cor--bg);
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-image: url(/Assets/img/fundoBoasVindas.svg);
+}
+
+:root {
+    --cor--primaria: #A60402;
+    --cor--secundaria: #DFC4A2;
+    --cor--input:#F0E4D4;
+    --cor--placeholder:#A9A197;
+    --cor--bg:#F7F1E8;
+    --cor--hover--botao: #970402;
+    --cor--press--botao: #760301;
+    --cor--confirmacao: #008124;
+    --cor--erro:#8c2e0e;
+    --cor--info:#0077a9;
+    --cor--aviso:#e8d000;
+    --cor-preto:black;
+    --cor--branco: white;
+    --fonte--logo: playfair display;
+    --fonte: urbanist;
+}
+
+.titulo{
+    color: #A60402;
+    font-size: 26px;
+}
+.texto{
+    color: #A60402;
+    font-weight: 400;
+}
+
+.texto,.titulo{
+text-align: center;
+}
+
+
+.cont{
+    margin-top: 80px;
+    }
+
+.card{
+    background-color: var(--cor--branco);
+    width: 100%;
+    height: 396px;
+    position:fixed;
+    bottom:0px;
+    border-radius: 30px 30px 0 0;
+}
+
+.botao {
+    width: 64px;
+    height: 64px;
+    background-color: var(--cor--primaria);
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 16px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.267); /* Sombra suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
