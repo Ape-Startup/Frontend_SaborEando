@@ -93,9 +93,9 @@ padding: 3vh 21px 3vh 21px;
 border-radius: 30px;
 }
 
-.input-grande .ativo{
-  margin-bottom: 2vh;
-  margin-top: 2vh;
+.input-grande .ativo,.erro,.sucesso{
+  margin-bottom: 1vh;
+  
 }
 
 .input-grande label{
@@ -103,6 +103,7 @@ color: #400207;
 font-family: "Urbanist", sans-serif;
 font-weight: 600;
 margin-left: 5px;
+display: flex;
 }
 
 #icon{
@@ -339,8 +340,13 @@ width: 100%;
 text-align: center;
 }
 
-.primarios .ativo:hover{
-background-color: var(--cor--hover--botao);
+.input-grande .ativo:hover, 
+.input-grande .erro:hover, 
+.input-grande .sucesso:hover,
+.primarios .ativo:hover, 
+.primarios .erro:hover, 
+.primarios .sucesso:hover {
+    background-color: #DFC4A2;
 }
 
 .input-grande .ativo:hover{
@@ -352,9 +358,15 @@ input:-webkit-autofill {
   color: #fff !important;
 }
 
+.input-grande span{
+  font-size: .7em;
+  color: var(--cor--primaria);
+}
+
 @media screen and (max-height: 700px) {
-  .input-grande .ativo{
+  .input-grande .ativo,.erro,.sucesso{
     margin-bottom: 1vh;
     margin-top: 0.5vh;
   }
 }
+

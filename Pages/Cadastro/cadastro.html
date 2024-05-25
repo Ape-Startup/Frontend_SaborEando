@@ -38,22 +38,25 @@
                 <!--Inicios dos inputs-->
                 <div class="input-grande">
                     <label for="email"> E-mail </label>
-                    <input type="email" class="ativo" name="email" placeholder="Digite seu e-mail" required>
+                    <span id="mensagemEmail"></span>
+                    <input type="email" class="ativo" name="email" placeholder="Digite seu e-mail"  required>
                 </div>
 
                 <div class="input-grande">
                     <label for="email"> Confirme seu E-mail </label>
+                    <span id="mensagemConfEmail"></span>
                     <input type="email" class="ativo" name="confirm-email" placeholder="Digite novamente seu e-mail" required>
                 </div>
                 
                 <div class="input-grande">
                     <label for="senha"> Senha </label>
+                    <span id="mensagemSenha"></span>
                     <div class="senha-container">
-                        <input type="password" class="ativo" name="senha" placeholder="Digite sua senha" required>
+                        <input type="password" class="ativo" name="senha" placeholder="Digite sua senha"  required>
                         <div id="icon">
                             <div class="tooltip-container">
                                 <i class="fa-regular fa-circle-question"></i>
-                                  <span class="tooltip">6 digitos*<br>1 letra maiúscula*<br>1 minúscula*</span><!--É mostrado ao clickar na ?--> 
+                                  <span class="tooltip">6 digitos*<br>1 letra maiúscula*<br>1 minúscula*</span><!--É mostrado ao clickar na '?'--> 
                                 </div>
                         </div>
                     </div>
@@ -61,6 +64,7 @@
                 
                 <div class="input-grande">
                     <label for="senha"> Confirme sua Senha </label>
+                    <span id="mensagemConfSenha"></span>
                     <input type="password" class="ativo" name="confirm-senha" placeholder="Digite novamente sua senha" required>
                 </div>  
 
