@@ -151,7 +151,7 @@ function addMarker(restaurante) {
         restauranteIcon = specialIcon;
     } else {
         restauranteIcon = L.icon({
-            iconUrl: '../../Assets/img/iconPlacePin.svg',
+            iconUrl: '../../Assets/img/iconSweetPlacePin.svg',
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
             iconSize: [45, 81],
             iconAnchor: [12, 41],
