@@ -64,7 +64,7 @@ header .container-superior{
     align-items: center;
     justify-content: space-between;
     margin-top: .3em;
-    color: var(--cor--input);
+    color: var(--cor--bg);
     font-family: var(--fonte);
 }
 

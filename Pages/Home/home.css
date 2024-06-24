@@ -314,22 +314,6 @@ header{
     z-index: 999;
 }
 
-header .container-inferior{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-family: var(--fonte);
-    color: var(--cor--branco);
-    font-size: 22px;
-    font-weight: 600;
-    padding-bottom: 18px;
-}
-
-header .container-inferior span{
-  margin-top: 28px;
-}
-
-
 header .container {
     width: 90%;
     flex-direction: column;
@@ -341,19 +325,50 @@ header .container-superior{
     align-items: center;
     justify-content: space-between;
     margin-top: .3em;
-    color: var(--cor--input);
+    color: var(--cor--bg);
     font-family: var(--fonte);
+     
+    
 }
 
 header .container-esquerdo{
     display: flex;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+
+header .container-direito{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
 }
 
 header .container-esquerdo img{
-    width: 50px;
+    width: 30px;
 }
 
+header .container-esquerdo span{
+    font-family: var(--fonte--logo);
+    font-weight: bold;
+    margin-left: .5em;
+}
+
+header{
+    border-radius: 0;
+}
+header .container-inferior{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte);
+    color: var(--cor--branco);
+    font-size: 1.5em;
+    padding-bottom: 18px;
+    font-weight: 500;
+}
+/*Fim da Header*/
 
 .logo{
     font-family: var(--fonte--logo);
