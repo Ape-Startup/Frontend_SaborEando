@@ -1,21 +1,26 @@
 
+        // uso estrito por conta da validação do cep -- deixa o código menos propicio a erros 
         'use strict';
 
+        // inicia com os campos limpos
         const limparFormulario = () => {
             document.getElementById('cidade').value = '';
             document.getElementById('uf').value = '';
             document.getElementById('cep').classList.remove('input-error');
         }
 
+        // dados de endereco
         const preencherFormulario = (endereco) => {
             document.getElementById('cidade').value = endereco.localidade || '';
             document.getElementById('uf').value = endereco.uf || '';
         }
 
+        // expressão regular para CEP
         const cepValido = (cep) => cep.length === 8 && /^[0-9]+$/.test(cep);
 
         const formatarCep = (cep) => cep.replace(/\D/g, '');
 
+        // validação do cep 
         const pesquisarCep = async () => {
             limparFormulario();
 
@@ -23,11 +28,13 @@
             let cep = cepInput.value;
             cep = formatarCep(cep);
 
+            // adiciona a class input-error que marca a borda do input de vermelho
             if (!cepValido(cep)) {
                 cepInput.classList.add('input-error');
                 return;
             }
 
+            // API da validação
             const url = `https://viacep.com.br/ws/${cep}/json/`;
 
             try {
@@ -42,17 +49,22 @@
                 } else {
                     preencherFormulario(endereco);
                 }
+                // remove o input error
                 cepInput.classList.remove('input-error');
             
             } catch (error) {
                 console.error(error);
                 alert('Ocorreu um erro ao buscar o CEP. Por favor, tente novamente mais tarde.');
+                // adiciona a classe input error
                 cepInput.classList.add('input-error');
+                
             }
         }
 
+        // Pesquisa cep quando o usuário sair do input CEP
         document.getElementById('cep').addEventListener('focusout', pesquisarCep);
 
+        // verifica se os dados foram preenchidos
         function verificarCampos() {
             const nome = document.getElementById('nome').value.trim();
             const sobrenome = document.getElementById('sobrenome').value.trim();
@@ -62,8 +74,10 @@
             const cidade = document.getElementById('cidade').value.trim();
             const estado = document.getElementById('uf').value.trim();
 
+            
             const entrarButton = document.getElementById('entrarButton');
-
+            
+            // Campos necessários para liberar o acesso do botão prosseguir  
             if (nome !== '' && sobrenome !== '' && tel !== '' && pais !== 'padrao') {
                 entrarButton.classList.remove('desativado');
                 entrarButton.classList.add('ativo');
@@ -75,14 +89,18 @@
             }
         }
 
+        // Campos verificados 
         document.getElementById('nome').addEventListener('input', verificarCampos);
         document.getElementById('sobrenome').addEventListener('input', verificarCampos);
         document.getElementById('tel').addEventListener('input', verificarCampos);
         document.getElementById('pais').addEventListener('change', verificarCampos);
 
+        // função para mandar dados para o banco de dados MySQL
+        // Criação de form
         function submitForm(event) {
+            // Evita campos em brancos 
             event.preventDefault();
-
+             
             const nome = document.getElementById('nome').value;
             const sobrenome = document.getElementById('sobrenome').value;
             const datNasc = document.getElementById('dat-nasc').value;
@@ -92,8 +110,10 @@
             const cidade = document.getElementById('cidade').value;
             const estado = document.getElementById('uf').value;
 
+            // primeira parte dos dados(email e senha) salvos no storage no cadastro parte 1
             const firstPartData = JSON.parse(localStorage.getItem('cadastro'));
 
+            // Forma do objeto 
             const cadastroData = {
                 email: firstPartData.email,
                 senha: firstPartData.senha,
@@ -118,6 +138,7 @@
 
             console.log('Dados completos do cadastro:', cadastroData);
 
+            // Requisição para acesar a rorta de cadastro
             fetch('http://localhost:3000/user/register', {
                 method: 'POST',
                 headers: {
@@ -127,10 +148,12 @@
             })
             .then(response => response.json())
             .then(data => {
+                
+                // respostas 
                 console.log('Resposta do backend:', data);
                 alert('Cadastro realizado com sucesso!');
                 localStorage.removeItem('cadastro');
-                window.location.href = '../../Pages/Login/login.html';
+                window.location.href = '../../Pages/Login/login.html';    //vai para a página de login
             })
             .catch((error) => {
                 console.error('Erro ao enviar dados para o backend:', error);

@@ -1,4 +1,4 @@
-
+// pegar os dados de email e senha
     function saveFirstPart(event) {
             event.preventDefault();
             const email = document.getElementById('email').value;
@@ -8,115 +8,124 @@
     
             localStorage.setItem('cadastro', JSON.stringify({ email, senha }));
     
+            // mostra essa mensagem no console.log e direciona para o cadastro2
             console.log('Dados salvos na primeira parte:', email, senha);
             window.location.href = 'cadastro2.html';
         }
     
+    // função para validar o email
+
         function verificarEmail() {
-    const emailInput = document.getElementById('email');
-    const email = emailInput.value.trim();
-    const mensagemEmail = document.getElementById('mensagemEmail');
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value.trim();
+            const mensagemEmail = document.getElementById('mensagemEmail');
 
-    if (email === '') {
-        mensagemEmail.textContent = '';
-        mensagemEmail.style.display = 'none';
-        emailInput.classList.remove('input-com-erro');
-        return;
-    }
+            if (email === '') {
+                mensagemEmail.textContent = '';
+                mensagemEmail.style.display = 'none';
+                emailInput.classList.remove('input-com-erro');
+                return;
+            }
 
-    if (!validarEmail(email)) {
-        mensagemEmail.textContent = 'E-mail inválido';
-        mensagemEmail.style.display = 'block';
-        emailInput.classList.add('input-com-erro');
-    } else {
-        mensagemEmail.textContent = '';
-        mensagemEmail.style.display = 'none';
-        emailInput.classList.remove('input-com-erro');
-    }
-}
+            if (!validarEmail(email)) {
+                mensagemEmail.textContent = 'E-mail inválido';
+                mensagemEmail.style.display = 'block';
+                emailInput.classList.add('input-com-erro');
+            } else {
+                mensagemEmail.textContent = '';
+                mensagemEmail.style.display = 'none';
+                emailInput.classList.remove('input-com-erro');
+            }
+        }
 
-function verificarConfEmail() {
-    const emailInput = document.getElementById('email');
-    const confirmEmailInput = document.getElementById('confirm-email');
-    const email = emailInput.value.trim();
-    const confirmEmail = confirmEmailInput.value.trim();
-    const mensagemConfEmail = document.getElementById('mensagemConfEmail');
+        // Função para validar a confirmação de email
 
-    if (email === '' || confirmEmail === '') {
-        mensagemConfEmail.textContent = '';
-        mensagemConfEmail.style.display = 'none';
-        confirmEmailInput.classList.remove('input-com-erro');
-        return;
-    }
+        function verificarConfEmail() {
+            const emailInput = document.getElementById('email');
+            const confirmEmailInput = document.getElementById('confirm-email');
+            const email = emailInput.value.trim();
+            const confirmEmail = confirmEmailInput.value.trim();
+            const mensagemConfEmail = document.getElementById('mensagemConfEmail');
 
-    if (email !== confirmEmail) {
-        mensagemConfEmail.textContent = 'Os e-mails não coincidem';
-        mensagemConfEmail.style.display = 'block';
-        confirmEmailInput.classList.add('input-com-erro');
-    } else {
-        mensagemConfEmail.textContent = '';
-        mensagemConfEmail.style.display = 'none';
-        confirmEmailInput.classList.remove('input-com-erro');
-    }
-}
+            if (email === '' || confirmEmail === '') {
+                mensagemConfEmail.textContent = '';
+                mensagemConfEmail.style.display = 'none';
+                confirmEmailInput.classList.remove('input-com-erro');
+                return;
+            }
 
-function verificarSenha() {
-    const senhaInput = document.getElementById('senha');
-    const senha = senhaInput.value.trim();
-    const mensagemSenha = document.getElementById('mensagemSenha');
+            if (email !== confirmEmail) {
+                mensagemConfEmail.textContent = 'Os e-mails não coincidem';
+                mensagemConfEmail.style.display = 'block';
+                confirmEmailInput.classList.add('input-com-erro');
+            } else {
+                mensagemConfEmail.textContent = '';
+                mensagemConfEmail.style.display = 'none';
+                confirmEmailInput.classList.remove('input-com-erro');
+            }
+        }
 
-    if (senha === '') {
-        mensagemSenha.textContent = '';
-        mensagemSenha.style.display = 'none';
-        senhaInput.classList.remove('input-com-erro');
-        return;
-    }
+        // Função para validação da senha
+        function verificarSenha() {
+            const senhaInput = document.getElementById('senha');
+            const senha = senhaInput.value.trim();
+            const mensagemSenha = document.getElementById('mensagemSenha');
 
-    if (!validarSenha(senha)) {
-        mensagemSenha.textContent = 'Senha inválida';
-        mensagemSenha.style.display = 'block';
-        senhaInput.classList.add('input-com-erro');
-    } else {
-        mensagemSenha.textContent = '';
-        mensagemSenha.style.display = 'none';
-        senhaInput.classList.remove('input-com-erro');
-    }
-}
+            if (senha === '') {
+                mensagemSenha.textContent = '';
+                mensagemSenha.style.display = 'none';
+                senhaInput.classList.remove('input-com-erro');
+                return;
+            }
 
-function verificarConfSenha() {
-    const senhaInput = document.getElementById('senha');
-    const confirmSenhaInput = document.getElementById('confirm-senha');
-    const senha = senhaInput.value.trim();
-    const confirmSenha = confirmSenhaInput.value.trim();
-    const mensagemConfSenha = document.getElementById('mensagemConfSenha');
+            if (!validarSenha(senha)) {
+                mensagemSenha.textContent = 'Senha inválida';
+                mensagemSenha.style.display = 'block';
+                senhaInput.classList.add('input-com-erro');
+            } else {
+                mensagemSenha.textContent = '';
+                mensagemSenha.style.display = 'none';
+                senhaInput.classList.remove('input-com-erro');
+            }
+        }
 
-    if (senha === '' || confirmSenha === '') {
-        mensagemConfSenha.textContent = '';
-        mensagemConfSenha.style.display = 'none';
-        confirmSenhaInput.classList.remove('input-com-erro');
-        return;
-    }
 
-    if (senha !== confirmSenha) {
-        mensagemConfSenha.textContent = 'As senhas não coincidem';
-        mensagemConfSenha.style.display = 'block';
-        confirmSenhaInput.classList.add('input-com-erro');
-    } else {
-        mensagemConfSenha.textContent = '';
-        mensagemConfSenha.style.display = 'none';
-        confirmSenhaInput.classList.remove('input-com-erro');
-    }
-}
+        // função para validação de verificação de senha
 
-function validarEmail(email) {
-    // Lógica de validação de e-mail (pode ser uma expressão regular ou outra validação)
-    return /\S+@\S+\.\S+/.test(email);
-}
+        function verificarConfSenha() {
+            const senhaInput = document.getElementById('senha');
+            const confirmSenhaInput = document.getElementById('confirm-senha');
+            const senha = senhaInput.value.trim();
+            const confirmSenha = confirmSenhaInput.value.trim();
+            const mensagemConfSenha = document.getElementById('mensagemConfSenha');
 
-function validarSenha(senha) {
-    // Lógica de validação de senha (por exemplo, mínimo de 6 caracteres, uma letra maiúscula, etc.)
-    return senha.length >= 6 && /[A-Z]/.test(senha) && /[a-z]/.test(senha);
-}
+            if (senha === '' || confirmSenha === '') {
+                mensagemConfSenha.textContent = '';
+                mensagemConfSenha.style.display = 'none';
+                confirmSenhaInput.classList.remove('input-com-erro');
+                return;
+            }
+
+            if (senha !== confirmSenha) {
+                mensagemConfSenha.textContent = 'As senhas não coincidem';
+                mensagemConfSenha.style.display = 'block';
+                confirmSenhaInput.classList.add('input-com-erro');
+            } else {
+                mensagemConfSenha.textContent = '';
+                mensagemConfSenha.style.display = 'none';
+                confirmSenhaInput.classList.remove('input-com-erro');
+            }
+        }
+
+        // expressão regular para email
+        function validarEmail(email) {
+            return /\S+@\S+\.\S+/.test(email);
+        }
+
+        // expressão regular para senha
+        function validarSenha(senha) {
+            return senha.length >= 6 && /[A-Z]/.test(senha) && /[a-z]/.test(senha);
+        }
 
 // Função para verificar o estado do botão e mostrar mensagens de erro ao sair do foco
 function verificarCampos() {
@@ -131,6 +140,8 @@ function verificarCampos() {
     const senhaValida = validarSenha(document.getElementById('senha').value);
     const senhasIguais = document.getElementById('senha').value === document.getElementById('confirm-senha').value;
     const checkboxChecked = document.getElementById('termos').checked;
+
+    // Troca a cor do botão prosseguir e permite acesso ao cadastro 2
 
     if (emailValido && emailsIguais && senhaValida && senhasIguais && checkboxChecked) {
         entrarButton.classList.remove('desativado');
