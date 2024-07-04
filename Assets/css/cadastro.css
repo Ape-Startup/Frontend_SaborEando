@@ -125,11 +125,11 @@ display: flex;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   color: var(--cor--bg);
   border-radius: 8px;
-  height: 20px;
+  height: 13px;
   width: 20px;
   display: grid;
   place-items: center;
-  margin-left: -50px;
+  margin-left: -20px;
 }
 
 .tooltip-container i{
@@ -362,6 +362,28 @@ input:-webkit-autofill {
 .input-grande span{
   font-size: .7em;
   color: var(--cor--primaria);
+}
+
+/* cadastro mensagens  */
+.primarios .ativo {
+    background-color: var(--cor--primaria);
+    /* Adicione outros estilos conforme necessário */
+}
+
+.primarios .desativado {
+    background-color: #EDCDCC;
+    /* Adicione outros estilos conforme necessário */
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 0.9em;
+    margin: 4px 0px;
+    display: none; /* Oculta inicialmente as mensagens de erro */
+}
+
+.input-grande input.input-com-erro {
+  border: 2px solid var(--cor--erro);
 }
 
 @media screen and (max-height: 700px) {

@@ -45,6 +45,7 @@
 .primarios .desativado{
     width: 78vw;
     height: 55px;
+    margin-bottom: 15px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -52,6 +53,7 @@
     font-family: var(--fonte);
     color: white;
     font-weight: 500;
+    border: none;
 }
 .primarios span{
     padding-left: .5em;

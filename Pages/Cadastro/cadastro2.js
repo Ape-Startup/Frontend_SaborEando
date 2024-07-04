@@ -1,26 +1,140 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const nomeInput = document.getElementById('nome');
-    const sobrenomeInput = document.getElementById('sobrenome');
-    const telInput = document.getElementById('tel');
-    const entrarButton = document.getElementById('entrarButton');
 
-    nomeInput.addEventListener('input', validarFormulario);
-    sobrenomeInput.addEventListener('input', validarFormulario);
-    telInput.addEventListener('input', validarFormulario);
+        'use strict';
 
-    function validarFormulario() {
-        const nome = nomeInput.value.trim();
-        const sobrenome = sobrenomeInput.value.trim();
-        const tel = telInput.value.trim();
-
-        if (nome !== '' && sobrenome !== '' && tel.length > 8) {
-            entrarButton.classList.remove('desativado');
-            entrarButton.classList.add('ativo');
-            entrarButton.removeAttribute('disabled');
-        } else {
-            entrarButton.classList.remove('ativo');
-            entrarButton.classList.add('desativado');
-            entrarButton.setAttribute('disabled', 'disabled');
+        const limparFormulario = () => {
+            document.getElementById('cidade').value = '';
+            document.getElementById('uf').value = '';
+            document.getElementById('cep').classList.remove('input-error');
         }
-    }
-});
+
+        const preencherFormulario = (endereco) => {
+            document.getElementById('cidade').value = endereco.localidade || '';
+            document.getElementById('uf').value = endereco.uf || '';
+        }
+
+        const cepValido = (cep) => cep.length === 8 && /^[0-9]+$/.test(cep);
+
+        const formatarCep = (cep) => cep.replace(/\D/g, '');
+
+        const pesquisarCep = async () => {
+            limparFormulario();
+
+            const cepInput = document.getElementById('cep');
+            let cep = cepInput.value;
+            cep = formatarCep(cep);
+
+            if (!cepValido(cep)) {
+                cepInput.classList.add('input-error');
+                return;
+            }
+
+            const url = `https://viacep.com.br/ws/${cep}/json/`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar CEP');
+                }
+
+                const endereco = await response.json();
+                if (endereco.hasOwnProperty('erro')) {
+                    throw new Error('CEP não encontrado');
+                } else {
+                    preencherFormulario(endereco);
+                }
+                cepInput.classList.remove('input-error');
+            
+            } catch (error) {
+                console.error(error);
+                alert('Ocorreu um erro ao buscar o CEP. Por favor, tente novamente mais tarde.');
+                cepInput.classList.add('input-error');
+            }
+        }
+
+        document.getElementById('cep').addEventListener('focusout', pesquisarCep);
+
+        function verificarCampos() {
+            const nome = document.getElementById('nome').value.trim();
+            const sobrenome = document.getElementById('sobrenome').value.trim();
+            const datNasc = document.getElementById('dat-nasc').value;
+            const tel = document.getElementById('tel').value.trim();
+            const pais = document.getElementById('pais').value;
+            const cidade = document.getElementById('cidade').value.trim();
+            const estado = document.getElementById('uf').value.trim();
+
+            const entrarButton = document.getElementById('entrarButton');
+
+            if (nome !== '' && sobrenome !== '' && tel !== '' && pais !== 'padrao') {
+                entrarButton.classList.remove('desativado');
+                entrarButton.classList.add('ativo');
+                entrarButton.removeAttribute('disabled');
+            } else {
+                entrarButton.classList.remove('ativo');
+                entrarButton.classList.add('desativado');
+                entrarButton.setAttribute('disabled', 'disabled');
+            }
+        }
+
+        document.getElementById('nome').addEventListener('input', verificarCampos);
+        document.getElementById('sobrenome').addEventListener('input', verificarCampos);
+        document.getElementById('tel').addEventListener('input', verificarCampos);
+        document.getElementById('pais').addEventListener('change', verificarCampos);
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const sobrenome = document.getElementById('sobrenome').value;
+            const datNasc = document.getElementById('dat-nasc').value;
+            const tel = document.getElementById('tel').value;
+            const cep = document.getElementById('cep').value;
+            const pais = document.getElementById('pais').value;
+            const cidade = document.getElementById('cidade').value;
+            const estado = document.getElementById('uf').value;
+
+            const firstPartData = JSON.parse(localStorage.getItem('cadastro'));
+
+            const cadastroData = {
+                email: firstPartData.email,
+                senha: firstPartData.senha,
+                nome,
+                sobrenome,
+                data_nascimento: datNasc,
+                foto: null,
+                enderecos: [
+                    {
+                        cep,
+                        pais,
+                        estado,
+                        cidade,
+                    }
+                ],
+                telefones: [
+                    {
+                        telefone: tel
+                    }
+                ]
+            };
+
+            console.log('Dados completos do cadastro:', cadastroData);
+
+            fetch('http://localhost:3000/user/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(cadastroData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Resposta do backend:', data);
+                alert('Cadastro realizado com sucesso!');
+                localStorage.removeItem('cadastro');
+                window.location.href = '../../Pages/Login/login.html';
+            })
+            .catch((error) => {
+                console.error('Erro ao enviar dados para o backend:', error);
+                alert('Erro ao realizar o cadastro.');
+            });
+        }
+   

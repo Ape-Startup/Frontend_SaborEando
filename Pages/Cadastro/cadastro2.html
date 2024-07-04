@@ -2,84 +2,65 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <!--Tirando o zoom-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!--Chamando CSS-->
     <link rel="stylesheet" href="../../Assets/css/cadastro.css">
     <link rel="stylesheet" href="../../Assets/css/cadastro2.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/components/button/botoes.css">
-    <!--Chamando Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+    <style>
+        /* Estilo adicional para o input de erro */
+        .input-error {
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
     <title>Cadastro 2</title>
 </head>
-
 <body>
- 
-
-
-     <!--Container geral-->
     <section class="main">
-        <!--Container superior-->
         <div class="groupLogin">
-            <!--Logo-->
             <img src="../../Assets/img/logo.svg" alt="logo do Sabor&Ando">
-            <!--Seta para voltar-->
-          <a href="./cadastro.html"><i class="fa-solid fa-caret-left"></i></a>
-          <!--Passos Inicio-->
-          <div class="passos">
-            <div class="checkContainer">                
-                <div class="checkPasso"></div>
-                <div class="checkPasso" id="marcado"></div>
+            <a href="./cadastro.html"><i class="fa-solid fa-caret-left"></i></a>
+            <div class="passos">
+                <div class="checkContainer">
+                    <div class="checkPasso"></div>
+                    <div class="checkPasso" id="marcado"></div>
+                </div>
+                <span>Passo</span>
+                <span>2 de 2</span>
             </div>
-            <span>Passo</span>
-            <span>2 de 2</span>
-          </div>
-          <!--Fim de Passos-->
         </div>
-        <!--Fim do container superior-->
-        <!--Inicio do container inferior-->
         <div class="areaLogin">
-            
-            
-            <!--Inicio do formulário-->
-            <form class="form" action="" method="post">
-                <!--Titulo-->
+            <form class="form" action="#" method="post" onsubmit="submitForm(event)">
                 <h1>Adoraríamos saber mais sobre você!</h1>
-                <!--Inicios dos inputs-->
                 <div class="grupo">
-                    <div class="input-pequeno" >
+                    <div class="input-pequeno">
                         <label for="nome"> Nome *</label>
-                        <input type="text" class="ativo" name="nome" placeholder="Nome" id="nome" required>
+                        <input type="text" class="ativo" id="nome" name="nome" placeholder="Nome" required>
                     </div>
-    
                     <div class="input-pequeno">
                         <label for="sobrenome"> Sobrenome *</label>
-                        <input type="text" class="ativo" id="sobrenome" name="sobrenome"  placeholder="Sobrenome" required>
+                        <input type="text" class="ativo" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
                     </div>  
                 </div>
-                             
                 <div class="grupo">
                     <div class="input-pequeno">
                         <label for="dat-nasc"> Data de nascimento </label>
                         <input type="date" class="ativo" id="dat-nasc" name="dat-nasc" placeholder="">
                     </div>  
-    
                     <div class="input-pequeno">
                         <label for="tel"> Telefone *</label>
-                        <input type="tel" class="ativo" id="tel"  name="tel" placeholder="(00) 00000-0000" required>
+                        <input type="tel" class="ativo" id="tel" name="tel" placeholder="(00) 00000-0000" required>
                     </div>  
                 </div>
-                
                 <div class="grupo">
-                    <div class="input-pequeno" >
+                    <div class="input-pequeno">
                         <label for="cep"> CEP </label>
                         <input type="text" class="ativo" id="cep" name="cep" placeholder="Digite seu CEP">
                     </div>  
-    
-                    <div class="input-pequeno" >
-                        <label for="pais" id="pais"> País </label>
+                    <div class="input-pequeno">
+                        <label for="pais"> País </label>
                         <select id="pais" name="pais" class="ativo">
                             <option value="padrao">UF</option>
                             <optgroup label="América Latina">
@@ -124,43 +105,32 @@
                                 <option value="tailandia">Tailândia</option>
                                 <option value="vietna">Vietnã</option>
                             </optgroup>
-                          </select>
+                        </select>
                     </div> 
-                    
                 </div>
                 <div class="grupo">
-                    <div class="input-pequeno" >
-                        <label for="cidade"> Cidade </label>
-                        <input type="text" class="ativo" id="cidade" placeholder="Digite sua cidade" name="cidade">
-                    </div>  
-    
                     <div class="input-pequeno">
-                        <label for="uf" id="estado"> Estado </label>
-                        <input type="text" class="ativo" id="uf" placeholder="Digite seu Estado" name="estado">
+                        <label for="cidade"> Cidade </label>
+                        <input type="text" class="ativo" id="cidade" name="cidade" placeholder="Digite sua cidade">
+                    </div>  
+                    <div class="input-pequeno">
+                        <label for="uf"> Estado </label>
+                        <input type="text" class="ativo" id="uf" name="uf" placeholder="Digite seu Estado">
                     </div>  
                 </div>
-            </div>
-            <!--Fim dos inputs-->
-            <!--Fim do container inferior-->
-            <!--Botão-->
-                
-            </form>
-
                 <div class="primarios">
-                    <a href="../../Pages/Login/login.html"><button onclick= "passarPagina()" type="submit" class="desativado" id="entrarButton" disabled>Próximo </button> </a>
+                    <button type="submit" id="entrarButton" class="desativado" disabled>Próximo</button>
                 </div>
-            <!--Fim do formulário-->
-            
-            <!--Logo inferior-->
+            </form>
             <div class="logo-fim">
                 <img src="../../Assets/img/logo.svg" alt="logo do Sabor&Ando">
                 <span>Sabor&Ando</span>
             </div>
-            
+        </div>
     </section>
 
+   <script src="cadastro2.js"></script>
 </body>
-<!--Script para validar os campos-->
-<script src="./cadastro2.js"></script>
-<script src="./validacaoCEP.js"></script>
 </html>
+
+

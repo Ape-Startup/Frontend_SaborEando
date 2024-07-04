@@ -12,81 +12,77 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Cadastro</title>
 </head>
+
 <body>
     <section class="main">
-        <!--Container geral-->
         <div class="groupLogin">
-            <!--Logo-->
             <img src="../../Assets/img/logo.svg" alt="logo do Sabor&Ando">
-            <!--Seta para voltar-->
-          <a href="../../index.html"><i class="fa-solid fa-caret-left"></i></a> <!--Adicionar o caminho--> 
-          <!--Passos Inicio-->
-          <div class="passos">
-            <div class="checkContainer">
-                <div class="checkPasso" id="marcado"></div>
-                <div class="checkPasso"></div>
+            
+            <!-- Seta de retorno -->
+            <a href="../../index.html"><i class="fa-solid fa-caret-left"></i></a>
+            
+            <!-- Passos iniciais -->
+            <div class="passos">
+                <div class="checkContainer">
+                    <div class="checkPasso" id="marcado"></div>
+                    <div class="checkPasso"></div>
+                </div>
+                <span>Passo</span>
+                <span>1 de 2</span>
             </div>
-            <span>Passo</span>
-            <span>1 de 2</span>
-          </div>
-          <!--Fim de Passos-->
+            <!-- fim de passos -->
         </div>
-        <!--Fim do container superior-->
-        <!--Inicio do container inferior-->
+        
+        <!-- Fim do container superior -->
+        <!-- Inicio do container inferior -->
+
         <div class="areaLogin">
-            <form class="form" action="" method="post">
-                <!--Inicios dos inputs-->
+            <form class="form" action="#" onsubmit="saveFirstPart(event)">
+                
+                <!-- Inicio dos inputs -->
                 <div class="input-grande">
-                    <label for="email"> E-mail </label>
-                    <span id="mensagemEmail"></span>
-                    <input type="email" class="ativo" name="email" placeholder="Digite seu e-mail"  required>
+                    <label for="email">E-mail</label>
+                    <span id="mensagemEmail" class="mensagem-erro"></span>
+                    <input type="email" class="ativo" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-grande">
+                    <label for="confirm-email">Confirme seu E-mail</label>
+                    <span id="mensagemConfEmail" class="mensagem-erro"></span>
+                    <input type="email" class="ativo" id="confirm-email" name="confirm-email" placeholder="Digite novamente seu e-mail" required>
                 </div>
 
                 <div class="input-grande">
-                    <label for="email"> Confirme seu E-mail </label>
-                    <span id="mensagemConfEmail"></span>
-                    <input type="email" class="ativo" name="confirm-email" placeholder="Digite novamente seu e-mail" required>
-                </div>
-                
-                <div class="input-grande">
-                    <label for="senha"> Senha </label>
-                    <span id="mensagemSenha"></span>
+                    <label for="senha">Senha</label>
+                    <span id="mensagemSenha" class="mensagem-erro"></span>
                     <div class="senha-container">
-                        <input type="password" class="ativo" name="senha" placeholder="Digite sua senha"  required>
+                        <input type="password" id="senha" class="ativo" name="senha" placeholder="Digite sua senha" required>
                         <div id="icon">
                             <div class="tooltip-container">
                                 <i class="fa-regular fa-circle-question"></i>
-                                  <span class="tooltip">6 digitos*<br>1 letra maiúscula*<br>1 minúscula*</span><!--É mostrado ao clickar na '?'--> 
-                                </div>
+                                <span class="tooltip">6 digitos*<br>1 letra maiúscula*<br>1 minúscula*</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="input-grande">
-                    <label for="senha"> Confirme sua Senha </label>
-                    <span id="mensagemConfSenha"></span>
-                    <input type="password" class="ativo" name="confirm-senha" placeholder="Digite novamente sua senha" required>
-                </div>  
 
+                <div class="input-grande">
+                    <label for="confirm-senha">Confirme sua Senha</label>
+                    <span id="mensagemConfSenha" class="mensagem-erro"></span>
+                    <input type="password" class="ativo" id="confirm-senha" name="confirm-senha" placeholder="Digite novamente sua senha" required>
+                </div>
                 <div class="checkbox-container">
                     <div class="content">
-                        <input type="checkbox" class="ui-checkbox">
-                      </div>
+                        <input type="checkbox" class="ui-checkbox" id="termos" required>
+                    </div>
                     <span>Aceito <a href="https://docs.google.com/document/d/1D0sw4vdsrfSyAnr3c1LaJ0jcbkEXR3bjrfI1zxWHA0o/edit?usp=sharing">termos de compromisso e privacidade</a> do app</span>
                 </div>
-                <!--Fim dos inputs-->
-                
+                <div class="primarios">
+                    <button type="submit" id="entrarButton" class="desativado">Próximo</button>
+                </div>
             </form>
-            <!--Fim do formulário-->
-            <!--Botão-->
-            <div class="primarios">
-               <a href="./cadastro2.html"><button type="submit" class="desativado" id="entrarButton" disabled>Próximo </button> </a>
-            </div>
-          
         </div>
-        <!--Fim do container inferior-->
     </section>
-    <!--Script para validar os campos-->
-    <script src="./cadastro.js"></script>
+    
+   <script src="cadastro.js"></script>
 </body>
 </html>
