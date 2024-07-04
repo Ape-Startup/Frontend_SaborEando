@@ -165,6 +165,8 @@ form .input-pequeno .erro{
 textarea{
     margin-top: 12px;
     height: 100px;
+    border-radius: 20px;
+    border: 0 var(--cor--primaria);
 }
 
 /*botão*/
