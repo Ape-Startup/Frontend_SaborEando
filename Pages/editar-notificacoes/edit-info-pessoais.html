@@ -8,7 +8,6 @@
     <title>Editar informações pessoais</title>
     <link rel="stylesheet" href="../../Assets/components/button/botoes.css">
     <link rel="stylesheet" href="../../Assets/components/header/header.css">
-    <link rel="stylesheet" href="../../Assets/components/geral-header-nav.css">
     <link rel="stylesheet" href="../../Pages/editar-notificacoes/edit-info-pessoais.css">
     <link rel="stylesheet" href="../../Assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -25,7 +24,7 @@
 
     </header>
     <div class="areaLogin">
-        <form class="form" action="" method="post">
+        <form class="form">
 
             <div class="grupo">
                 <div class="input-pequeno" >
@@ -47,7 +46,7 @@
             </div>  
 
             <div class="input-pequeno">
-                <label for="dat-nasc"> Data de nascimento </label>
+                <label for="dat-nasc"> Data de nascimento </label >
                 <input type="date" class="erro" id="dat-nasc" name="dat-nasc" required>
             </div>  
 
@@ -62,7 +61,7 @@
         </div>
         
         <div class="primarios">
-            <a href="#"><button type="submit" class="ativo" id="entrarButton" disabled>Salvar dados </button> </a>
+            <button type="submit" class="desativado" id="entrarButton" disabled>Salvar dados </button>
         </div>
 
     </div>

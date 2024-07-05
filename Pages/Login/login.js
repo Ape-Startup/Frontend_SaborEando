@@ -17,6 +17,38 @@ function validarFormulario() {
 
 function redirecionar() {
     if (entrarButton.classList.contains('active')) {
-        window.location.href = "../../Pages/Home/home.html"; // Replace 'outra_pagina.html' with the URL of the page you want to redirect to
+
+        const loginDados = {
+            email: emailInput.value,
+            senha: senhaInput.value
+        }
+
+        fetch('http://localhost:3000/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(loginDados)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                alert("Credenciais inválidas");
+                console.log(loginDados);
+            }
+                else {
+                alert("Logado com sucesso");
+                console.log(loginDados);
+                console.log(data);    
+                window.location.href = "../../Pages/Home/home.html"; // Replace 'outra_pagina.html' with the URL of the page you want to redirect to
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert("Ocorreu um erro ao tentar fazer login");
+        });
     }
-} 
+}
+
+
+
