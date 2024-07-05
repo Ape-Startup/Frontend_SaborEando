@@ -30,4 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
         var modal = document.getElementById('modal');
         modal.style.display = 'none';
     });
+    
+    fetch('http://localhost:3000/eventos/', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    }) .then(response => response.json())
+    .then(data => {
+        console.log('Resposta do backend:', data);
+    })
+    .catch((error) => {
+        console.error('Erro ao enviar dados para o backend:', error);
+    });
+
 });
