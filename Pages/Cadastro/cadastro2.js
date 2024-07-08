@@ -117,29 +117,22 @@
             const cadastroData = {
                 email: firstPartData.email,
                 senha: firstPartData.senha,
-                nome,
-                sobrenome,
+                nome: nome,
+                sobrenome: sobrenome,
                 data_nascimento: datNasc,
                 foto: null,
-                enderecos: [
-                    {
-                        cep,
-                        pais,
-                        estado,
-                        cidade,
-                    }
-                ],
-                telefones: [
-                    {
-                        telefone: tel
-                    }
-                ]
+                cep: cep,
+                pais: pais,
+                estado: estado,
+                cidade: cidade,
+                telefone: tel
+                
             };
 
             console.log('Dados completos do cadastro:', cadastroData);
 
             // Requisição para acesar a rorta de cadastro
-            fetch('http://localhost:3000/user/register', {
+            fetch('http://localhost:3000/api/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
