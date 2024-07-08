@@ -38,6 +38,55 @@ body{
     padding: 0px 32px;
 }
 
+/* splash */
+#splash-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #A60402;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+#splash-screen img {
+    width: 130px;
+    height: auto;
+}
+
+#splash-screen .bottom-text {
+    position: absolute;
+    bottom: 40px;
+    width: 108px;
+    font-size: 14px;
+    font-family: Urbanist;
+    color: #f2e6d8;
+    text-align: center;
+    display: inline-block;
+}
+
+#splash-screen .bottom-text span {
+    font-size: 22px;
+    font-family: "Megrim", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #f2e6d8;
+    text-align: center;
+    display: inline-block;
+}
+
+.main {
+    display: none; /* Inicialmente ocultar o conteúdo principal */
+}
+
+#main-content {
+    position: relative;
+    display: block; /* Tornar visível o conteúdo principal */
+    text-align: center;
+}
 
 
 /* div da logo */
