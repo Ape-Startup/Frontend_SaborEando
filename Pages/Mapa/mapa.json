@@ -2,7 +2,7 @@
 
     {
         "id": 1,
-        "img":"../../Assets/img/casaDosFrios1.svg",
+        "img":"../../Assets/img/casaDosFriosLogo.svg",
         "nome": "Casa dos Frios",
         "endereco":"Av. Rui Barbosa, 412 - Graças, Recife - PE ",
         "telefone":"+55 81 2125-0200",
@@ -13,7 +13,7 @@
     
     {
         "id": 2,
-        "img":"../../Assets/img/casaDosFrios2.svg",
+        "img":"../../Assets/img/casaDosFriosLogo.svg",
         "nome": "Casa dos Frios",
         "endereco":"Av. Eng. Domingos Ferreira, 1920 - Boa Viagem, Recife - PE ",
         "telefone":"+55 81 3325-0676",
@@ -51,7 +51,7 @@
 
     {
         "id": 5,
-        "img":"../../Assets/img/restauranteTioPepe.svg",
+        "img":"../../Assets/img/restauranteTioPepeLogo.svg",
         "nome": "Restaurante Tio Pepe",
         "endereco":"R. Alm. Tamandaré, 170 - Boa Viagem, Recife - PE ",
         "telefone":"+55 81 3341-7153",
@@ -62,7 +62,7 @@
 
     {
         "id": 6,
-        "img":"../../Assets/img/parraxaxaCasaForte.svg",
+        "img":"../../Assets/img/restauranteParraxaxaLogo.svg",
         "nome": "Restaurante Parraxaxá",
         "endereco":"R. Igarassu, 40 - Casa Forte, Recife - PE ",
         "telefone":"+55 81 3268-4169",
@@ -72,7 +72,7 @@
 
     {
         "id": 7,
-        "img":"../../Assets/img/parraxaxaBoaViagem.svg",
+        "img":"../../Assets/img/restauranteParraxaxaLogo.svg",
         "nome": "Restaurante Parraxaxá",
         "endereco":"Av. Fernando Simões Barbosa, 1200 - Boa Viagem, Recife - PE ",
         "telefone":"+55 81 3463-7874",
@@ -82,7 +82,7 @@
     
     {
         "id": 8,
-        "img":"../../Assets/img/restauranteTerraco.svg",
+        "img":"../../Assets/img/restauranteTerracoLogo.svg",
         "nome": "Terraço Capibaribe | Cozinha Contemporânea ",
         "endereco":"R. Antônio Vitrúvio, 113 - Poço da Panela, Recife - PE ",
         "telefone":"Não consta",
@@ -92,7 +92,7 @@
 
    {
         "id": 9,
-        "img":"../../Assets/img/restauranteCafeTao.svg",
+        "img":"../../Assets/img/restauranteCafeTaoLogo.svg",
         "nome": " Café Tão - Cafeteria",
         "endereco":"Av. Santos Dumont, 345 - Aflitos, Recife - PE",
         "telefone":"+55 81 3429-9406",
