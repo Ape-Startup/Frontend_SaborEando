@@ -22,6 +22,15 @@ var specialIcon = L.icon({
     shadowSize: [71, 58]
 });
 
+var cotidianoIcon = L.icon({
+    iconUrl: '../../Assets/img/iconCotidianoPin.svg',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+    iconSize: [45, 81],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [71, 58]
+});
+
 function success(position) {
     console.log(position.coords.latitude, position.coords.longitude);
     userLatitude = position.coords.latitude;
@@ -83,6 +92,10 @@ document.getElementById("filtroFrutosDoMar").addEventListener("click", function(
     filterMarkers();
 });
 
+document.getElementById("filtroCotidiano").addEventListener("click", function() {
+    filterMarkers();
+});
+
 function search() {
     var searchTerm = document.getElementById("searchInput").value.toLowerCase();
 
@@ -117,6 +130,7 @@ function search() {
 function filterMarkers() {
     var filtroDoces = document.getElementById("filtroDoces").checked;
     var filtroFrutosDoMar = document.getElementById("filtroFrutosDoMar").checked;
+    var filtroCotidiano = document.getElementById("filtroCotidiano").checked;
 
     map.eachLayer(function (layer) {
         if (layer instanceof L.Marker && layer !== userMarker) {
@@ -127,15 +141,17 @@ function filterMarkers() {
     fetch('./mapa.json')
         .then(response => response.json())
         .then(data => {
-            if (!filtroDoces && !filtroFrutosDoMar) {
+            if (!filtroDoces && !filtroFrutosDoMar && !filtroCotidiano) {
                 data.forEach(function (restaurante) {
                     addMarker(restaurante);
                 });
             } else {
                 data.forEach(function (restaurante) {
-                    if (filtroDoces && restaurante.id < 26) {
+                    if (filtroDoces && restaurante.id < 100) {
                         addMarker(restaurante);
-                    } else if (filtroFrutosDoMar && restaurante.id >= 26) {
+                    } else if (filtroFrutosDoMar && restaurante.id >= 100 && restaurante.id < 199) {
+                        addMarker(restaurante);
+                    } else if (filtroCotidiano && restaurante.id >= 200 && restaurante.id < 300) {
                         addMarker(restaurante);
                     }
                 });
@@ -147,8 +163,10 @@ function filterMarkers() {
 function addMarker(restaurante) {
     let restauranteIcon;
 
-    if (restaurante.id >= 26) {
+    if (restaurante.id >= 100 && restaurante.id < 199) {
         restauranteIcon = specialIcon;
+    } else if (restaurante.id >= 200 && restaurante.id < 300) {
+        restauranteIcon = cotidianoIcon;
     } else {
         restauranteIcon = L.icon({
             iconUrl: '../../Assets/img/iconSweetPlacePin.svg',
@@ -165,7 +183,7 @@ function addMarker(restaurante) {
     }).addTo(map)
         .bindPopup(`<div class="cardMap">
                     <div class=imgDiv> 
-                    <img  class=imgMap src="${restaurante.img}" alt="${restaurante.nome}">
+                    <img class=imgMap src="${restaurante.img}" alt="${restaurante.nome}">
                     </div>
                     <h3 class="nomeRestaurante">${restaurante.nome}</h3>
                     <p>${restaurante.endereco} </p> 

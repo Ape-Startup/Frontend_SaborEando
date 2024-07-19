@@ -266,7 +266,7 @@
 
     
     {
-        "id": 26,
+        "id": 100,
         "img":"../../Assets/img/restauranteEntreAmigosMar.svg",
         "nome": "Entre Amigos Praia",
         "endereco":"Avenida Boa Viagem, 760- Boa Viagem, Recife -PE",
@@ -279,7 +279,7 @@
 
 
     {
-        "id": 27,
+        "id": 101,
         "img":"../../Assets/img/restauranteCamaradaMar.svg",
         "nome": "Camarada Camarão",
         "endereco":"Av. República do Líbano, 251 - Boa Viagem, Recife - PE ",
@@ -291,7 +291,7 @@
 
 
     {
-        "id": 28,
+        "id": 102,
         "img":"../../Assets/img/restauranteNauMar.svg",
         "nome": "Nau Frutos do Mar",
         "endereco":"Av. Eng. Domingos Ferreira, 1910 - Boa Viagem, Recife - PE",
@@ -303,7 +303,7 @@
 
 
     {
-        "id": 29,
+        "id": 103,
         "img":"../../Assets/img/restauranteVieiraMar.svg",
         "nome": "Vieira Restaurante e Bar",
         "endereco":"R. Araguari, 47 - Brasília Teimosa, Recife - PE",
@@ -314,7 +314,7 @@
     },
 
     {
-        "id": 30,
+        "id": 104,
         "img":"../../Assets/img/restauranteBarDoCaboMar.svg",
         "nome": "Bar do Cabo",
         "endereco":"R. Nanuque, 37 - Brasília Teimosa, Recife - PE",
@@ -324,13 +324,143 @@
     },
 
     {
-        "id": 31,
+        "id": 105,
         "img":"../../Assets/img/restauranteIlhaDosNavegantesMar.svg",
         "nome": "Ilha dos Navegantes Frutos do Mar e Grelhados",
         "endereco":"R. dos Navegantes, 2055 - Boa Viagem, Recife - PE",
         "telefone":"+55 81 3326-5317",
         "latitude":   -8.115, 
         "longitude": -34.89305
+    },
+
+
+
+    {
+        "id": 200,
+        "img":"../../Assets/img/restauranteBarTonhaoCotidiano.svg",
+        "nome": "Bar do Tonhão",
+        "endereco":"R. Amaro Coutinho, 339 - Encruzilhada, Recife - PE",
+        "telefone":"+55 81 3034-8085",
+        "latitude":   -8.03508, 
+        "longitude": -34.89356
+    },
+
+
+    {
+        "id": 201,
+        "img":"../../Assets/img/tapiocaDamiao.svg",
+        "nome": " Tapioca Rendada do Damião",
+        "endereco":"Av. Rio Branco, 155-27 - Recife-PE",
+        "telefone":" +55 81 98463-6772",
+        "latitude":-8.06254, 
+        "longitude": -34.87274
+    },
+
+    {
+        "id": 202,
+        "img":"../../Assets/img/tapiocaDamiao.svg",
+        "nome": " Tapioca Rendada do Damião",
+        "endereco":"Av. Conselheiro Aguiar, 3005 - Boa Viagem, Recife - PE",
+        "telefone":"+55 81 99714-3097",
+        "latitude":-8.11597, 
+        "longitude": -34.89408
+    },
+
+    {
+        "id": 203,
+        "img":"../../Assets/img/tapiocaDamiao.svg",
+        "nome": " Tapioca Rendada do Damião",
+        "endereco":"Rua Antônio Lumack do Monte, 203 - Loja 03 - Boa Viagem, Recife - PE",
+        "telefone":"Não consta",
+        "latitude":-8.11821, 
+        "longitude": -34.90217
+    },
+
+    {
+        "id": 204,
+        "img":"../../Assets/img/tapiocaDamiao.svg",
+        "nome": " Tapioca Rendada do Damião",
+        "endereco":"R. Ernesto de Paula Santos - Boa Viagem, Recife - PE",
+        "telefone":"+55 81 99682-9588",
+        "latitude":-8.12439, 
+        "longitude": -34.90629
+    },
+
+    {
+        "id": 205,
+        "img":"../../Assets/img/tapiocaDamiao.svg",
+        "nome": " Tapioca Rendada do Damião",
+        "endereco":"Av. Boa Viagem, Quiosque 34 - Boa Viagem, Recife - PE",
+        "telefone":"+55 81 98158-4415",
+        "latitude":-8.03795, 
+        "longitude": -34.89873
+    },
+
+    {
+        "id": 206,
+        "img":"../../Assets/img/tapiocaDamiao.svg",
+        "nome": " Tapioca Rendada do Damião",
+        "endereco":"R. Prof. Mário de Castro, 361 - Boa Viagem, Recife - PE",
+        "telefone":"+55 81 98158-4415",
+        "latitude":-8.13606, 
+        "longitude": -34.90513 
+    },
+
+
+    {
+        "id": 207,
+        "img":"../../Assets/img/restauranteBarGeralda.svg",
+        "nome": "Bar da Geralda",
+        "endereco":"R. do Morro da Conceição, 486 - Morro da Conceição, Recife - PE",
+        "telefone":"+55 81 3442-1382",
+        "latitude":-8.01916, 
+        "longitude": -34.91504 
+    },
+
+    {
+        "id": 208,
+        "img":"../../Assets/img/restauranteBarBecaBar.svg",
+        "nome": "Beca Bar: Bar do Arrumadinho",
+        "endereco":"R. Pedro Afonso, 326 - Santo Amaro, Recife - PE, 50100-220",
+        "telefone":"+55 81 3423-9008",
+        "latitude":  -8.04918, 
+        "longitude":  -34.88181
+    },
+
+
+    {
+        "id": 209,
+        "img":"../../Assets/img/restauranteBarMangai.svg",
+        "nome": "Mangai",
+        "endereco":"Av. Eng. Domingos Ferreira, 1910 - Boa Viagem, Recife - PE",
+        "telefone":"+55 81 3205-8455",
+        "latitude":  -8.10537, 
+        "longitude":  -34.8903
+    },
+
+
+    {
+        "id": 210,
+        "img":"../../Assets/img/restauranteJoaoDaCarneDeSol.svg",
+        "nome": "João da Carne de Sol",
+        "endereco":"R. José Bonifácio, 385 - Madalena, Recife - PE",
+        "telefone":"+55 81 3445-0454",
+        "latitude":    -8.0478, 
+        "longitude":  -34.90663
+    },
+
+
+    {
+        "id": 211,
+        "img":"../../Assets/img/restauranteCantinhoDaBel.svg",
+        "nome": "Cantinho da Bel",
+        "endereco":"R. Diogo Álvares, 206 - Zumbi, Recife - PE, 50711-110",
+        "telefone":"+55 81 3446-1966",
+        "latitude":    -8.04834, 
+        "longitude":  -34.91687
     }
-   
-    ]
+
+]
+
+
+  
