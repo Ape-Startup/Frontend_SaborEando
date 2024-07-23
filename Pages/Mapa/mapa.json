@@ -99,70 +99,10 @@
         "latitude":-8.03795, 
         "longitude": -34.89873
     },
-
-    {
-        "id": 10,
-        "img":"../../Assets/img/tapiocaDamiao.svg",
-        "nome": " Tapioca Rendada do Damião",
-        "endereco":"Av. Rio Branco, 155-27 - Recife-PE",
-        "telefone":" +55 81 98463-6772",
-        "latitude":-8.06254, 
-        "longitude": -34.87274
-    },
-
-    {
-        "id": 11,
-        "img":"../../Assets/img/tapiocaDamiao.svg",
-        "nome": " Tapioca Rendada do Damião",
-        "endereco":"Av. Conselheiro Aguiar, 3005 - Boa Viagem, Recife - PE",
-        "telefone":"+55 81 99714-3097",
-        "latitude":-8.11597, 
-        "longitude": -34.89408
-    },
-
-    {
-        "id": 12,
-        "img":"../../Assets/img/tapiocaDamiao.svg",
-        "nome": " Tapioca Rendada do Damião",
-        "endereco":"Rua Antônio Lumack do Monte, 203 - Loja 03 - Boa Viagem, Recife - PE",
-        "telefone":"Não consta",
-        "latitude":-8.11821, 
-        "longitude": -34.90217
-    },
-
-    {
-        "id": 13,
-        "img":"../../Assets/img/tapiocaDamiao.svg",
-        "nome": " Tapioca Rendada do Damião",
-        "endereco":"R. Ernesto de Paula Santos - Boa Viagem, Recife - PE",
-        "telefone":"+55 81 99682-9588",
-        "latitude":-8.12439, 
-        "longitude": -34.90629
-    },
-
-    {
-        "id": 14,
-        "img":"../../Assets/img/tapiocaDamiao.svg",
-        "nome": " Tapioca Rendada do Damião",
-        "endereco":"Av. Boa Viagem, Quiosque 34 - Boa Viagem, Recife - PE",
-        "telefone":"+55 81 98158-4415",
-        "latitude":-8.03795, 
-        "longitude": -34.89873
-    },
-
-    {
-        "id": 15,
-        "img":"../../Assets/img/tapiocaDamiao.svg",
-        "nome": " Tapioca Rendada do Damião",
-        "endereco":"R. Prof. Mário de Castro, 361 - Boa Viagem, Recife - PE",
-        "telefone":"+55 81 98158-4415",
-        "latitude":-8.13606, 
-        "longitude": -34.90513 
-    },
     
 
     {
-        "id": 16,
+        "id": 10,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":" R. Dr. João Santos Filho, 255 -  L1 - SS43 -Parnamirim, Recife - PE",
@@ -172,7 +112,7 @@
     },
 
     {
-        "id": 17,
+        "id": 11,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"R. das Pernambucanas, 265 - Graças, Recife - PE",
@@ -182,7 +122,7 @@
     },
 
     {
-        "id": 18,
+        "id": 12,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"Av. Visc. de Suassuna, 140 - Santo Amaro, Recife - PE",
@@ -192,7 +132,7 @@
     },
 
     {
-        "id": 19,
+        "id": 13,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"R José de Alencar, 105, Loja 109 E - Boa Vista, Recife - PE",
@@ -202,7 +142,7 @@
     },
 
     {
-        "id": 20,
+        "id": 14,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"R. Dr. João Asfora, 26 - loja 1 - Ilha do Leite, Recife - PE",
@@ -212,7 +152,7 @@
     },
 
     {
-        "id": 21,
+        "id": 15,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"Av. República do Líbano, 251 - Pina, Recife - PE",
@@ -222,7 +162,7 @@
     },
 
     {
-        "id": 22,
+        "id": 16,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"R. Maria Carolina, 315 - Boa Viagem, Recife - PE",
@@ -232,7 +172,7 @@
     },
 
     {
-        "id": 23,
+        "id": 17,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"R. Carlos Pereira Falcão, 136 - Loja 5/6 - Boa Viagem, Recife - PE",
@@ -242,7 +182,7 @@
     },
 
     {
-        "id": 24,
+        "id": 18,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"Praça Min. Salgado Filho, 4775 - Imbiribeira, Recife - PE",
@@ -253,7 +193,7 @@
     },
 
     {
-        "id": 25,
+        "id": 19,
         "img":"../../Assets/img/cafeSaoBraz.svg",
         "nome": " Coffee Shop São Braz",
         "endereco":"R. Baltazar Passos, 520 - Boa Viagem, Recife - PE",
@@ -263,8 +203,6 @@
     },
 
 
-
-    
     {
         "id": 100,
         "img":"../../Assets/img/restauranteEntreAmigosMar.svg",
