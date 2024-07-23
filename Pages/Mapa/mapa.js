@@ -207,3 +207,18 @@ function initializeMap() {
         })
         .catch(error => console.error('Erro ao carregar as localizações:', error));
 }
+
+// Função para alternar a visibilidade do contêiner de filtro
+function toggleFilter() {
+    var filterContainer = document.getElementById('filterContainer');
+    if (filterContainer.style.display === "none" || filterContainer.style.display === "") {
+        filterContainer.style.display = "block";
+    } else {
+        filterContainer.style.display = "none";
+    }
+}
+
+// Inicialize o filtro como oculto
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('filterContainer').style.display = 'none';
+});
