@@ -18,6 +18,8 @@ function validarFormulario() {
 function redirecionar() {
     if (entrarButton.classList.contains('active')) {
 
+        const token = localStorage.getItem('token')
+
         const loginDados = {
             email: emailInput.value,
             senha: senhaInput.value
@@ -36,7 +38,8 @@ function redirecionar() {
                 alert("Credenciais inválidas");
                 console.log(loginDados);
             }
-                else {
+            else {
+                localStorage.setItem('token', data.token);
                 alert("Logado com sucesso");
                 console.log(loginDados);
                 console.log(data);    
