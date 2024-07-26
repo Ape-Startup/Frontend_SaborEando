@@ -11,93 +11,83 @@
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    
-
-
     <title>Mapa</title>
 </head>
 
-
-
 <body>
-
     <header>
-        <!--Pagina atual-->
         <div class="container">
-            <!--Container superior - será fixo em todas as paginas-->
             <div class="container-superior">
                 <div class="container-esquerdo">
-                    <!--Logo-->
                     <img class="logo" src="../../Assets/img/logo.svg" alt="logo Sabor&ando">
                     <span>Sabor&Ando</span>
-                    
-                    <!--Fim da Logo-->
                 </div>
                 <div class="container-direito">
-                    <!--Local-->
                     <i class="fa-solid fa-location-dot"></i>
                     <span>Pernambuco</span>
-                    <!--Fim de Local-->
                 </div>
             </div>
-            <!--Fim Container superior-->
-            <!--Container inferior - o que vai mudar a depender da página, por isso não recebe css-->
             <div class="container-inferior">
                 <span>Mapa</span>
             </div>
-            <!--Fim Container inferior-->
         </div>
-        <!--Fim da div de Pagina atual-->
     </header>
 
-        <!-- inicio do mapa -->
-        <div class="mapa">
-            
-            <div class="searchContainer">
-                <input type="text" class="searchInput" id="searchInput" placeholder="Buscar restaurante...">
-                <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
-            </div>
-             
-            <div class="filter" >
-                
-                <div>
-                    <input type="checkbox" id="filtroDoces" class="filtroContent" >
-                    <label for="filtroDoce"> Doces Pernambucanos </label>
-                </div>
-             
-
-                <div>
-                    <input type="checkbox" id="filtroFrutosDoMar" class="filtroContent" >
-                    <label for="filtroFrutosDoMar"> Frutos do Mar </label>
-                </div>
-               
-            </div>
-
-            <div id="map"></div>
-            <img src="../../Assets/img/iconRestaurantePin.svg" alt="">
+    <div class="mapa">
+        <div class="searchContainer">
+            <input type="text" class="searchInput" id="searchInput" placeholder="Buscar restaurante...">
+            <i id="filterIcon" class="fa-solid fa-filter" onclick="toggleFilter()"></i>
         </div>
-        <!-- final do mapa -->
-    
-   
 
-        <!--Inicio da Nav-->
-        <nav>
-            <a href="../../Pages/Home/home.html"><div class="home homeMap"><div class="barra"></div><i class="fa-solid fa-house fa-2x"></i><span>Home</span></div></a>
-            <a href="../../Pages/Mapa/mapa.html"><div class="mapa mapMap"><div class="barra"></div><i class="fa-regular fa-map fa-2x"></i><span>Mapa</span></div></a>
-            <a href="../../Pages/Eventos/eventos.html"><div class="eventos eventosMap"><div class="barra"></div><i class="fa-regular fa-calendar fa-2x"></i><span>Eventos</span></div></a>
-            <a href="../../Pages/CategoriasPrincipal/categorisPrincipal.html"><div class="categorias categoriasMap"><div class="barra"></div><i class="fa-solid fa-utensils fa-2x"></i><span>Categorias</span></div></a>
-            <a href="../../Pages/Perfil/perfil.html"><div class="perfil perfilMap"><div class="barra"></div><i class="fa-regular fa-user fa-2x"></i><span>Perfil</span></div></a>
-        </nav>
-         <!--Fim da Nav-->
+        <div id="filterContainer" class="filter">
+            <div>
+                <input type="checkbox" id="filtroDoces" class="filtroContent">
+                <label for="filtroDoces"> Doces Pernambucanos </label>
+            </div>
+            <div>
+                <input type="checkbox" id="filtroFrutosDoMar" class="filtroContent">
+                <label for="filtroFrutosDoMar"> Frutos do Mar </label>
+            </div>
+            <div>
+                <input type="checkbox" id="filtroCotidiano" class="filtroContent">
+                <label for="filtroCotidiano"> Pratos do cotidiano </label>
+            </div>
+        </div>
 
+        <div id="map"></div>
+        <img src="../../Assets/img/iconRestaurantePin.svg" alt="">
+    </div>
+
+    <nav>
+        <a href="../../Pages/Home/home.html">
+            <div class="home homeMap">
+                <div class="barra"></div><i class="fa-solid fa-house fa-2x"></i><span>Home</span>
+            </div>
+        </a>
+        <a href="../../Pages/Mapa/mapa.html">
+            <div class="mapa mapMap">
+                <div class="barra"></div><i class="fa-regular fa-map fa-2x"></i><span>Mapa</span>
+            </div>
+        </a>
+        <a href="../../Pages/Eventos/eventos.html">
+            <div class="eventos eventosMap">
+                <div class="barra"></div><i class="fa-regular fa-calendar fa-2x"></i><span>Eventos</span>
+            </div>
+        </a>
+        <a href="../../Pages/CategoriasPrincipal/categorisPrincipal.html">
+            <div class="categorias categoriasMap">
+                <div class="barra"></div><i class="fa-solid fa-utensils fa-2x"></i><span>Categorias</span>
+            </div>
+        </a>
+        <a href="../../Pages/Perfil/perfil.html">
+            <div class="perfil perfilMap">
+                <div class="barra"></div><i class="fa-regular fa-user fa-2x"></i><span>Perfil</span>
+            </div>
+        </a>
+    </nav>
 
     <!-- Script -->
     <script src="./buscaMapa.js"></script>
     <script src="./mapa.js"></script>
-
-
-
-
 </body>
-
 </html>

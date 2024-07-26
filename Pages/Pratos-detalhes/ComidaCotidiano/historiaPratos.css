@@ -1,0 +1,191 @@
+:root {
+    --cor--primaria: #A60402;
+    --cor--secundaria: #DFC4A2;
+    --cor--input:#F0E4D4;
+    --cor--placeholder:#A9A197;
+    --cor--bg:#F7F1E8;
+    --cor--hover--botao: #970402;
+    --cor--press--botao: #760301;
+    --cor--confirmacao: #008124;
+    --cor--erro: #8c2e0e;
+    --cor--info: #0077a9;
+    --cor--aviso: ##e8d000;
+    --cor-preto:black;
+    --cor--branco:white;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:'Urbanist';
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Estilização da parte histórica de categoria */
+
+/* estilização geral */
+.mainPratosHistoria{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* card principal */
+.cardPrinpicalPratoHistoria{
+    background-image: url(../../../Assets/img/bgDivCardCotidiano.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    color: #ffff;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    max-width: 640px;
+}
+
+.cardPrinpicalPratoHistoria h1{
+    padding-top: 10px;
+    font-weight:bold;
+    font-size: 22px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.cardPrinpicalPratoHistoria p{
+    color: #FFF;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+/* Cards dos pratos  */
+.CardsPratos{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 41px;
+}
+
+
+.CardsPratos .imgPratosGrupo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+
+.imgPratosGrupo img{
+    width: 130px;
+    max-width: 200px;
+    border-radius: 12px;
+}
+
+
+.textoPratosGrupo{
+    font-size: .7rem;
+    max-width: 300px;
+    font-weight: 500;
+}
+
+
+/* botão */
+.btnLinkPratos{
+width: 100%;
+max-width: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.btnLinkPratos .btnPratosHistoricos{
+
+    background-color: var(--cor--primaria);
+    color: #ffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    padding: 15px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+}
+
+
+/* responsivo */
+
+@media(min-width:330px){
+    .cardPrinpicalPratoHistoria{
+       height: 280px;
+    }
+    
+    .cardPrinpicalPratoHistoria p{
+        padding:5px 10px;
+    }
+}
+
+@media(min-width:350px){
+    .cardPrinpicalPratoHistoria{
+        height: 260px;
+     }
+
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 15px;
+
+    }
+
+    .textoPratosGrupo{
+        font-size: .8rem;
+    }
+}
+
+
+
+@media(min-width:375px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 19px;
+
+    }
+
+    .textoPratosGrupo{
+        font-size: .9rem;
+    }
+
+}
+
+
+@media(min-width:390px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 28px;
+
+    }
+    .textoPratosGrupo{
+        font-size: 14px;
+    }
+
+}
+
+@media(min-width:400px){
+    .cardPrinpicalPratoHistoria p{
+        padding: 10px 29px;
+
+    }
+}

@@ -96,7 +96,7 @@ color: var(--cor--placeholder);
     border:#73685b 2px solid;
 }
 
- .fa-magnifying-glass{
+ .fa-filter{
    position: absolute;
    right: 20px;
    top: 12px;
