@@ -28,7 +28,7 @@
     function atualizarInfoAcesso(event) {
         event.preventDefault();
 
-        console.log("chega a ativar")
+        
         if (entrarButton.classList.contains('ativo')) {
 
             const AlterarAcesso = {
