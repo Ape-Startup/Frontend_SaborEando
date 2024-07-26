@@ -1,3 +1,6 @@
+    //Token que armazena a identificação do usuario na pagina(backend)
+    const token = localStorage.getItem('token');
+
     const emailInput = document.getElementById('email');
     const senhaInput = document.getElementById('senha');
 
@@ -19,8 +22,9 @@
         }
     }
 
-
+    //Função do botão e backend
     function atualizarInfoAcesso() {
+        
         console.log("chega a ativar")
         if (entrarButton.classList.contains('ativo')) {
 
@@ -28,18 +32,21 @@
                 email: emailInput.value,
                 senha: senhaInput.value
             }
-            fetch('http://localhost:3000/api/info-acesso/1', {
+            fetch('http://localhost:3000/api/info-acesso', {
                 method: 'PUT',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify(AlterarAcesso)
             })
             .then(response => response.json())
             .then(data => {
                 if (data.error) {
+                    alert(data.error)
                     alert("Informações inválidas");
                     console.log(AlterarAcesso);
+                    
                 } else {
                     alert("Informações de acesso atualizadas com sucesso");
                     console.log(AlterarAcesso);
@@ -47,8 +54,8 @@
                 }
             })
             .catch(error => {
-                console.error('Erro:', error);
-                alert("Ocorreu um erro ao tentar atualizar os dados de acesso");
+                alert(error);
+                //alert("Ocorreu um erro ao tentar atualizar os dados de acesso");
             });
         }
     }

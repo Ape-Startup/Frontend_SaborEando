@@ -18,7 +18,6 @@ function validarFormulario() {
 function redirecionar() {
     if (entrarButton.classList.contains('active')) {
 
-        const token = localStorage.getItem('token')
 
         const loginDados = {
             email: emailInput.value,
@@ -28,7 +27,8 @@ function redirecionar() {
         fetch('http://localhost:3000/api/login', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                
             },
             body: JSON.stringify(loginDados)
         })
@@ -39,7 +39,7 @@ function redirecionar() {
                 console.log(loginDados);
             }
             else {
-                localStorage.setItem('token', data.token);
+                localStorage.setItem('token', data.result.token);
                 alert("Logado com sucesso");
                 console.log(loginDados);
                 console.log(data);    

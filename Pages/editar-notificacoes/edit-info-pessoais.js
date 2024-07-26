@@ -1,4 +1,6 @@
-
+    //Token que armazena a identificação do usuario na pagina(backend)
+    const token = localStorage.getItem('token');
+    
     const nomeInput = document.getElementById('nome');
     const sobrenomeInput = document.getElementById('sobrenome');
     const datNascInput = document.getElementById('dat-nasc');
@@ -41,10 +43,11 @@
                 cep: cepInput.value,
                 telefone: telInput.value
             }
-            fetch('http://localhost:3000/api/info-pessoais/1', {
+            fetch('http://localhost:3000/api/info-pessoais', {
                 method: 'PUT',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify(alterarDados)
             })
