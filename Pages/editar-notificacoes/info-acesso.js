@@ -1,5 +1,7 @@
     //Token que armazena a identificação do usuario na pagina(backend)
     const token = localStorage.getItem('token');
+    
+    
 
     const emailInput = document.getElementById('email');
     const senhaInput = document.getElementById('senha');
@@ -23,8 +25,9 @@
     }
 
     //Função do botão e backend
-    function atualizarInfoAcesso() {
-        
+    function atualizarInfoAcesso(event) {
+        event.preventDefault();
+
         console.log("chega a ativar")
         if (entrarButton.classList.contains('ativo')) {
 
@@ -41,16 +44,23 @@
                 body: JSON.stringify(AlterarAcesso)
             })
             .then(response => response.json())
-            .then(data => {
+                .then(data => {
+                    
                 if (data.error) {
-                    alert(data.error)
-                    alert("Informações inválidas");
-                    console.log(AlterarAcesso);
+                    if (data.error === 'Token inválido') {
+                        window.location.href = '../../Pages/Login/login.html';
+                        alert("Faça login novamente");
+                    }
+                    else {
+                        alert(data.error);
+                    }
+                    
                     
                 } else {
                     alert("Informações de acesso atualizadas com sucesso");
-                    console.log(AlterarAcesso);
-                    console.log(data);    
+                    window.location.href = '../../Pages/Configuracao/configuracao.html';
+                    //console.log(AlterarAcesso);
+                    //console.log(data);    
                 }
             })
             .catch(error => {

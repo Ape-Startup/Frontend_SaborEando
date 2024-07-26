@@ -54,12 +54,17 @@
             .then(response => response.json())
             .then(data => {
                 if (data.error) {
-                    alert("Informações inválidas");
-                    console.log(alterarDados);
+                    if (data.error === 'Token inválido') {
+                        window.location.href = '../../Pages/Login/login.html';
+                        alert("Faça login novamente");
+                    }
+                    else {
+                        alert(data.error);
+                    }
                 } else {
                     alert("Informações atualizadas com sucesso");
-                    console.log(alterarDados);
-                    console.log(data);    
+                    //console.log(alterarDados);
+                    //console.log(data);    
                 }
             })
             .catch(error => {
