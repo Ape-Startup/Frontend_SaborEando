@@ -92,7 +92,7 @@ header .container-inferior{
     }
 
 .categoria-item {
-    width: 100%;
+    width: 60px;
     position: relative;
     border-radius: 50%;
     height: 60px;
@@ -120,6 +120,7 @@ header .container-inferior{
     height: 18px;
     flex-shrink: 0;
     z-index: 1;
+    margin-bottom: 15px;
     }
 
 .status {
@@ -128,7 +129,7 @@ header .container-inferior{
     margin: 0 !important;
     top: 53px;
     left: 261px;
-    font-size: 10px;
+    font-size: 12px;
     display: inline-block;
     z-index: 2;
 }
