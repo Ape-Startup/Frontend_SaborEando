@@ -96,31 +96,26 @@
             cursor: pointer;
             text-align: center;
             color: #f6e6e6;
+            
         }
         
-        .item-container {
+        .item-container img{
             width: 259px;
             position: relative;
             height: 142px;
+            border-radius: 18px;
         }
         
-        .item-content {
-            position: absolute;
-            top: 1px;
-            left: 0px;
-            border-radius: 18px;
-            width: 259px;
-            height: 142px;
-        }
         
         .restaurante-subtitle {
             width: 200px;
             position: absolute;
-            margin: 0;
+            margin-left:20px;
             top: 110px;
             font-weight: 600;
             display: inline-block;
             z-index: 1;
+            text-align: left;
         }
         /* icones */
         /* .like-parent {
