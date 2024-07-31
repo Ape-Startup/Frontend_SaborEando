@@ -31,6 +31,15 @@ var cotidianoIcon = L.icon({
     shadowSize: [71, 58]
 });
 
+var eventIcon = L.icon({
+    iconUrl: '../../Assets/img/iconEventPin.svg',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+    iconSize: [45, 81],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [71, 58]
+});
+
 function success(position) {
     console.log(position.coords.latitude, position.coords.longitude);
     userLatitude = position.coords.latitude;
@@ -96,6 +105,10 @@ document.getElementById("filtroCotidiano").addEventListener("click", function() 
     filterMarkers();
 });
 
+document.getElementById("filtroEventos").addEventListener("click", function() {
+    filterMarkers();
+});
+
 function search() {
     var searchTerm = document.getElementById("searchInput").value.toLowerCase();
 
@@ -131,6 +144,7 @@ function filterMarkers() {
     var filtroDoces = document.getElementById("filtroDoces").checked;
     var filtroFrutosDoMar = document.getElementById("filtroFrutosDoMar").checked;
     var filtroCotidiano = document.getElementById("filtroCotidiano").checked;
+    var filtroEventos = document.getElementById("filtroEventos").checked;
 
     map.eachLayer(function (layer) {
         if (layer instanceof L.Marker && layer !== userMarker) {
@@ -141,7 +155,7 @@ function filterMarkers() {
     fetch('./mapa.json')
         .then(response => response.json())
         .then(data => {
-            if (!filtroDoces && !filtroFrutosDoMar && !filtroCotidiano) {
+            if (!filtroDoces && !filtroFrutosDoMar && !filtroCotidiano && !filtroEventos) {
                 data.forEach(function (restaurante) {
                     addMarker(restaurante);
                 });
@@ -149,9 +163,11 @@ function filterMarkers() {
                 data.forEach(function (restaurante) {
                     if (filtroDoces && restaurante.id < 100) {
                         addMarker(restaurante);
-                    } else if (filtroFrutosDoMar && restaurante.id >= 100 && restaurante.id < 199) {
+                    } else if (filtroFrutosDoMar && restaurante.id >= 100 && restaurante.id < 200) {
                         addMarker(restaurante);
                     } else if (filtroCotidiano && restaurante.id >= 200 && restaurante.id < 300) {
+                        addMarker(restaurante);
+                    } else if (filtroEventos && restaurante.id >= 300) {
                         addMarker(restaurante);
                     }
                 });
@@ -163,7 +179,9 @@ function filterMarkers() {
 function addMarker(restaurante) {
     let restauranteIcon;
 
-    if (restaurante.id >= 100 && restaurante.id < 199) {
+    if (restaurante.id >= 300) {
+        restauranteIcon = eventIcon;
+    } else if (restaurante.id >= 100 && restaurante.id < 200) {
         restauranteIcon = specialIcon;
     } else if (restaurante.id >= 200 && restaurante.id < 300) {
         restauranteIcon = cotidianoIcon;

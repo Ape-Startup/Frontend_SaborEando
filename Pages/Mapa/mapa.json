@@ -204,6 +204,17 @@
 
 
     {
+        "id": 20,
+        "img":"../../Assets/img/cafeMaisProsa.svg",
+        "nome": " Café mais Prosa",
+        "endereco":"galeria chalé - R. Barão de Itamaracá, 284 - loja 4 - Espinheiro, Recife - PE",
+        "telefone":"+55 81 3048-4008",
+        "latitude":-8.04368,  
+        "longitude": -34.89314
+    },
+
+
+    {
         "id": 100,
         "img":"../../Assets/img/restauranteEntreAmigosMar.svg",
         "nome": "Entre Amigos Praia",
@@ -396,8 +407,85 @@
         "telefone":"+55 81 3446-1966",
         "latitude":    -8.04834, 
         "longitude":  -34.91687
-    }
+    },
 
+
+    
+    {
+        "id": 300,
+        "img":"../../Assets/img/feiraBomJesus.svg",
+        "nome": "Feira de Artesanato do Bom Jesus",
+        "endereco":"R. do Bom Jesus - Recife, PE",
+        "telefone":"+55 81 98102-2130",
+        "latitude": -8.06188,
+        "longitude":-34.87127
+    },
+
+    
+    {
+        "id": 301,
+        "img":"../../Assets/img/feiraBomJesus.svg",
+        "nome": "Feira de Artesanato do Bom Jesus",
+        "endereco":"Praça do Arsenal - Recife, PE",
+        "telefone":"Não consta",
+        "latitude": -8.06103,
+        "longitude":-34.87129
+    },
+
+
+    {
+        "id": 302,
+        "img":"../../Assets/img/feiraDaAurora.svg",
+        "nome": "Feira da Aurora",
+        "endereco":"R. da Aurora, 1034 - Boa Vista, Recife - PE",
+        "telefone":"Não consta",
+        "latitude": -8.0527,
+        "longitude":-34.87536
+    },
+
+    {
+        "id": 303,
+        "img":"../../Assets/img/recifeCoffe.svg",
+        "nome": "Recife Coffe",
+        "endereco":"##################################################",
+        "telefone":"Não consta",
+        "latitude":  111,
+        "longitude": 111
+    },
+
+    
+    {
+        "id": 304,
+        "img":"../../Assets/img/espacoAgroecologico.svg",
+        "nome": "Espaço Agroecológico de Setúbal",
+        "endereco":"Setúbal - Av. Mal. Juarez Távora, 41-99 - Boa Viagem, Recife - PE",
+        "telefone":"+55 81 99982-4312",
+        "latitude":  -8.13685, 
+        "longitude": -34.90816
+    },
+
+     
+    {
+        "id": 305,
+        "img":"../../Assets/img/festivalTorresmoPork.svg",
+        "nome": "festival Torresmo Land",
+        "endereco":"R. Olavo Bilac, 20a - Boa Viagem, Recife - PE",
+        "telefone":"Não consta",
+        "latitude":  -8.12926,  
+        "longitude": -34.9033
+    },
+
+    {
+        "id": 306,
+        "img":"../../Assets/img/festivalYakissoba.svg",
+        "nome": "Festival de Yakissoba e Karê",
+        "endereco":"Av. Pref. Antônio Pereira, 395 - Várzea, Recife - PE",
+        "telefone":"Não consta",
+        "latitude":  -8.06328,  
+        "longitude": -34.98645
+    }
+    
+   
 ]
 
 
