@@ -282,7 +282,27 @@
         "longitude": -34.89305
     },
 
+    
+    {
+        "id": 106,
+        "img":"../../Assets/img/restauranteAltar.svg",
+        "nome": "Altar Cozinha Ancestral",
+        "endereco":"Rua Frei Cassimiro, 449 - Santo Amaro, Recife - PE",
+        "telefone":"Não consta",
+        "latitude":    -8.04601,  
+        "longitude":  -34.88132
+    },
 
+
+    {
+        "id": 107,
+        "img":"../../Assets/img/restauranteBarDoSamuray.svg",
+        "nome": "Bar do Samuray",
+        "endereco":"R. Badejo, 272 - Brasília Teimosa, Recife - PE",
+        "telefone":"+55 81 99879-8853",
+        "latitude":    -8.08179, 
+        "longitude":  -34.87902
+    },
 
     {
         "id": 200,
@@ -409,8 +429,17 @@
         "longitude":  -34.91687
     },
 
+    {
+        "id": 212,
+        "img":"../../Assets/img/restauranteIlhaSertaneja.svg",
+        "nome": "Ilha Sertaneja",
+        "endereco":"Rua Dr. Nilo Dornelas Câmara, 16 - Boa Viagem, Recife - PE",
+        "telefone":"+55 81 3048-5886",
+        "latitude":    -8.13173, 
+        "longitude":  -34.90094
+    },
 
-    
+
     {
         "id": 300,
         "img":"../../Assets/img/feiraBomJesus.svg",
